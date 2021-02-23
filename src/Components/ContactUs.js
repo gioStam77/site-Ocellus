@@ -3,7 +3,14 @@ import React from "react";
 function ContactUs() {
   return (
     <div className="containerForm">
-      <form className="form">
+      <form
+        className="form"
+        name="contact-form"
+        method="post"
+        data-netlify="true"
+        onSubmit="submit"
+      >
+        <input type="hidden" name="form-name" value="contact-form" />
         <div>
           <input
             type="text"
@@ -36,7 +43,7 @@ function ContactUs() {
             rows="9"
             placeholder="Το μήνυμά σας"
             name="message"
-          />
+          ></textarea>
         </div>
         <div>
           <input
