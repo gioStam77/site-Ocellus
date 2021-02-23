@@ -1,0 +1,396 @@
+:root {
+  --mainBlue: #2a2a72;
+  --lightBlue: #009ffd;
+  --mainWhite: #f3f3f3;
+  --mainDark: #232528;
+  --mainYellow: #ffa400;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: var(--mainWhite);
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  background-image: url(../src/IMAGES/TAPETSARIA.jpg);
+  background-repeat: repeat;
+  background-size: auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.text-title {
+  font-family: "Permanent Marker", cursive;
+  letter-spacing: O.3rem;
+  text-transform: uppercase;
+  color: var(--mainBlue);
+  font-size: clamp(0.9rem, 1.1rem, 2rem);
+  text-align: center;
+}
+.text-blue {
+  color: var(--mainBlue);
+}
+.text-bright {
+  color: var(--lightBlue);
+}
+.underConstraction-image {
+  height: 200px;
+}
+.service-image {
+  font-size: 27px;
+  padding-left: 5px;
+}
+.contactLens-image {
+  font-size: 25px;
+  padding-left: 0px;
+}
+.liquid-image {
+  font-size: 25px;
+  padding-left: 0px;
+}
+.glasses-image {
+  font-size: 25px;
+  padding-left: 0px;
+}
+
+.navbar {
+  background: var(--mainBlue);
+  overflow-y: hidden;
+  height: 12vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo {
+  margin-left: 0.3rem;
+  margin-top: 0.2rem;
+}
+.icon-down {
+  margin-top: 7px;
+  margin-left: 3px;
+  font-size: large;
+}
+.mail-icon {
+  margin-top: 4px;
+  font-size: 1.5rem;
+}
+.tel-icon {
+  font-size: 1.3rem;
+}
+.bag-icon {
+  margin-right: 8px;
+  font-size: 1.5rem;
+}
+.navbar-nav {
+  display: flex;
+  justify-self: start;
+  justify-content: space-between;
+}
+.navbar-nav1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  letter-spacing: 1px;
+}
+.nav-item {
+  width: 15vw;
+
+  font-size: 1.1rem;
+}
+.nav-item-links {
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+  width: 10vw;
+
+  font-size: 1.1rem;
+}
+.menu-icon {
+  margin-right: 1rem;
+  display: none;
+}
+.home-icon {
+  font-size: 1.7rem;
+  margin-left: 70px;
+}
+.user-icon {
+  font-size: 1.7rem;
+  margin-left: 6.2rem;
+}
+.dropDown {
+  background-color: var(--mainBlue);
+  z-index: 1;
+  width: 170px;
+  position: absolute;
+  top: 8.5vh;
+  text-align: center;
+  justify-content: center;
+  font-size: small;
+  border-bottom-right-radius: 20%;
+}
+
+.dropDown li {
+  background: var(--mainBlue);
+  cursor: pointer;
+}
+.dropDown li:hover {
+  background: var(--lightBlue);
+}
+.dropDown-clicked {
+  display: none;
+}
+.dropDownList {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: var(--mainWhite);
+  padding: 15px;
+}
+.main {
+  display: grid;
+  place-items: center;
+}
+.underConstraction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  padding-top: 50px;
+}
+.useOfContactLens {
+  margin: 10vh;
+  background-color: var(--mainWhite);
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+}
+.useOfContactLens h3 {
+  padding: 15px;
+}
+.useOfContactLens img {
+  width: 60vw;
+  height: auto;
+}
+.useOfContactLens p {
+  margin: 10px;
+  padding: 10px;
+  color: var(--mainBlue);
+  text-align: match-parent;
+}
+
+.glassesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin: 5px;
+}
+.glassesItem {
+  flex: 0 1 auto;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 170px;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.4);
+}
+.glassesItem h3 {
+  color: var(--mainBlue);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20%;
+  font-size: 2rem;
+}
+.containerForm {
+  display: grid;
+  place-items: center;
+}
+.form {
+  margin-top: 15vh;
+  background-image: url(./IMAGES/takis2.jpg);
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+
+  width: 450px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.4);
+}
+.formItems {
+  margin-left: 50%;
+  color: var(--mainBlue);
+  font-size: 1rem;
+}
+
+.btn-form {
+  margin-left: 50%;
+  color: var(--mainBlue);
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.4);
+}
+.formTel {
+  font-family: "Permanent Marker", cursive;
+  letter-spacing: O.3rem;
+  text-transform: uppercase;
+  color: var(--mainBlue);
+  font-size: clamp(0.9rem, 1.1rem, 2rem);
+  text-align: center;
+}
+
+@media screen and (max-width: 830px) {
+  .menu-icon {
+    display: block;
+    margin-right: 0.5rem;
+    margin-left: 1rem;
+  }
+  .navbar {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-item {
+    font-size: 1rem;
+    justify-content: space-evenly;
+  }
+
+  .navbar-nav1 {
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #009ffd;
+    top: 12vh;
+    height: 88vh;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 350ms ease-in-out;
+  }
+  .active {
+    transform: translateX(0%);
+  }
+  .nav-item-links {
+    width: 10rem;
+  }
+  .home-icon {
+    font-size: 1.7rem;
+    margin-left: 40px;
+  }
+  .user-icon {
+    font-size: 1.7rem;
+    margin-left: 40px;
+  }
+  .dropDown {
+    display: flex;
+    top: auto;
+    margin-top: 3%;
+    right: 65px;
+    align-content: center;
+    align-items: center;
+    text-align: start;
+    justify-content: space-between;
+    font-size: large;
+    width: 80%;
+    height: 50px;
+    overflow-y: hidden;
+    border-bottom-right-radius: 20%;
+  }
+  .service-image {
+    font-size: 25px;
+    padding-left: 5px;
+  }
+  .glasses-image {
+    font-size: 25px;
+    padding-left: 5px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navbar-nav {
+    margin-right: 2rem;
+  }
+  .bag-icon {
+    margin-right: 0px;
+    font-size: 1.5rem;
+  }
+
+  .nav-item {
+    justify-content: center;
+    width: 25vw;
+    align-content: center;
+
+    font-size: 0.9rem;
+    justify-content: space-evenly;
+  }
+
+  .dropDown {
+    display: flex;
+    overflow-y: hidden;
+    margin-top: 5%;
+    left: 20px;
+    align-content: center;
+    text-align: start;
+    justify-content: space-between;
+    font-size: small;
+    width: 430px;
+    height: 50px;
+    border-bottom-right-radius: 20%;
+  }
+  .tel-icon {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+  }
+  .mail-icon {
+    margin-top: 4px;
+    font-size: 1.5rem;
+    margin-left: 3rem;
+  }
+  .service-image {
+    font-size: 25px;
+    padding-left: 20px;
+  }
+  .contactLens-image {
+    font-size: 25px;
+    padding-left: 15px;
+  }
+  .liquid-image {
+    font-size: 25px;
+    padding-left: 10px;
+  }
+  .glasses-image {
+    font-size: 25px;
+    padding-left: 10px;
+  }
+  .glue-image {
+    width: 35px;
+    padding-left: 10px;
+  }
+  .service-image {
+    font-size: 25px;
+    padding-left: 5px;
+  }
+}
