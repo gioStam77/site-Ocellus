@@ -5,12 +5,12 @@ function ContactUs() {
     <div className="containerForm">
       <form
         className="form"
-        name="contact v1"
+        name="contact"
         method="post"
         data-netlify="true"
         onSubmit="submit"
       >
-        <input type="hidden" name="form-name" value="contact v1" />
+        <input type="hidden" name="form-name" value="contact" />
         <div>
           <input
             type="text"
