@@ -5,12 +5,12 @@ function ContactUs() {
     <div className="containerForm">
       <form
         className="form"
-        name="contact-form"
+        name="contact v1"
         method="post"
         data-netlify="true"
         onSubmit="submit"
       >
-        <input type="hidden" name="form-name" value="contact-form" />
+        <input type="hidden" name="form-name" value="contact v1" />
         <div>
           <input
             type="text"
@@ -32,7 +32,7 @@ function ContactUs() {
             type="text"
             className="formItems"
             placeholder="Τίτλος"
-            name="subject/"
+            name="subject"
           />
         </div>
         <div>
@@ -46,15 +46,9 @@ function ContactUs() {
           ></textarea>
         </div>
         <div>
-          <input
-            type="submit"
-            className="btn-form"
-            value="Αποστολή Μηνύματος"
-          ></input>
-        </div>
-        <div className="formTel">
-          <h3>τηλεφωνο</h3>
-          <p>22870-22072</p>
+          <button type="submit" className="btn-form">
+            Αποστολή Μηνύματος
+          </button>
         </div>
       </form>
     </div>
