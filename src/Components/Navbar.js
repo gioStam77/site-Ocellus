@@ -58,7 +58,7 @@ function Navbar() {
         <img
           src="./images/πινακιδα.jpg"
           alt=""
-          width='140'
+          width="140"
           style={{ borderRadius: 10 }}
         />
       </Link>
@@ -70,14 +70,14 @@ function Navbar() {
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/contactUs">
+          <Link to="/contactUs" className="nav-item">
             <VscMail className="mail-icon" /> ocellus.gr@gmail.com
           </Link>
         </li>
       </ul>
       <ul className={click ? "navbar-nav1 active" : "navbar-nav1"}>
         <li className="nav-item-links">
-          <Link to="/"onClick={closeMobileMenu} >
+          <Link to="/" onClick={closeMobileMenu}>
             <VscHome className="home-icon" />
           </Link>
         </li>
@@ -103,13 +103,13 @@ function Navbar() {
           <FaRegCaretSquareDown className="icon-down" />
         </li>
         <li className="nav-item-links">
-          <Link to="/signUp"onClick={closeMobileMenu} >
+          <Link to="/signUp" onClick={closeMobileMenu}>
             <IoPersonOutline className="user-icon" />
           </Link>
         </li>
       </ul>
       <div>
-        <Link to="/cart">
+        <Link to="/cart" className="bag-icon">
           <i className="bag-icon">
             <BsBag />
           </i>

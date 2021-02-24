@@ -49,25 +49,25 @@ button:hover {
 }
 .service-image {
   font-size: 27px;
-  padding-left: 5px;
+  margin-left: 25px;
 }
 .contactLens-image {
   font-size: 25px;
-  padding-left: 0px;
+  margin-left: 36px;
 }
 .liquid-image {
   font-size: 25px;
-  padding-left: 0px;
+  margin-left: 0px;
 }
 .glasses-image {
   font-size: 25px;
-  padding-left: 0px;
+  margin-left: 60px;
 }
 
 .navbar {
   background: var(--mainBlue);
-  overflow-y: hidden;
-  height: 12vh;
+
+  height: 80px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -78,8 +78,7 @@ button:hover {
   margin-top: 0.2rem;
 }
 .icon-down {
-  margin-top: 7px;
-  margin-left: 3px;
+  padding: 0.5px 1px;
   font-size: large;
 }
 .mail-icon {
@@ -88,16 +87,17 @@ button:hover {
 }
 .tel-icon {
   font-size: 1.3rem;
+  margin-left: 25px;
 }
 .bag-icon {
-  margin-right: 8px;
   font-size: 1.5rem;
+  margin-right: 1rem;
 }
+
 .navbar-nav {
   display: flex;
-  justify-self: start;
-  justify-content: space-between;
 }
+
 .navbar-nav1 {
   display: flex;
   justify-content: center;
@@ -106,20 +106,22 @@ button:hover {
   letter-spacing: 1px;
 }
 .nav-item {
-  width: 15vw;
-
+  padding: 8px;
   font-size: 1.1rem;
+}
+.nav-item:hover {
+  color: var(--lightBlue);
 }
 .nav-item-links {
   display: flex;
   align-items: center;
-  margin-left: 1.5rem;
-  width: 10vw;
-
+  padding: 0.5rem 1rem;
   font-size: 1.1rem;
 }
+.nav-item-links:hover {
+  color: var(--lightBlue);
+}
 .menu-icon {
-  margin-right: 1rem;
   display: none;
 }
 .home-icon {
@@ -128,14 +130,13 @@ button:hover {
 }
 .user-icon {
   font-size: 1.7rem;
-  margin-left: 6.2rem;
 }
 .dropDown {
   background-color: var(--mainBlue);
   z-index: 1;
-  width: 170px;
+  width: 160px;
   position: absolute;
-  top: 8.5vh;
+  top: 50px;
   text-align: center;
   justify-content: center;
   font-size: small;
@@ -159,6 +160,7 @@ button:hover {
   text-decoration: none;
   color: var(--mainWhite);
   padding: 15px;
+  text-align: start;
 }
 .main {
   display: grid;
@@ -260,20 +262,17 @@ button:hover {
   text-align: center;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 960px) {
   .menu-icon {
     display: block;
-    margin-right: 0.5rem;
-    margin-left: 1rem;
-  }
-  .navbar {
-    align-items: center;
-    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 1.5rem;
   }
 
   .nav-item {
     font-size: 1rem;
-    justify-content: space-evenly;
   }
 
   .navbar-nav1 {
@@ -285,7 +284,8 @@ button:hover {
     align-items: center;
     justify-content: space-around;
     background-color: #009ffd;
-    top: 12vh;
+    top: 80px;
+    width: 100%;
     height: 88vh;
     flex-direction: column;
     transform: translateX(100%);
@@ -308,13 +308,13 @@ button:hover {
   .dropDown {
     display: flex;
     top: auto;
-    margin-top: 3%;
+    margin-top: 5%;
     right: 65px;
     align-content: center;
     align-items: center;
     text-align: start;
     justify-content: space-between;
-    font-size: large;
+    font-size: small;
     width: 80%;
     height: 50px;
     overflow-y: hidden;
@@ -322,29 +322,45 @@ button:hover {
   }
   .service-image {
     font-size: 25px;
-    padding-left: 5px;
+    margin-left: 5px;
   }
   .glasses-image {
     font-size: 25px;
-    padding-left: 5px;
+    margin-left: 15px;
+  }
+
+  .contactLens-image {
+    font-size: 25px;
+    margin-left: 36px;
+  }
+  .liquid-image {
+    font-size: 25px;
+    margin-left: 0px;
+  }
+  .service-image {
+    font-size: 27px;
+    margin-left: 25px;
+  }
+  .contactLens-image {
+    font-size: 25px;
+    margin-left: 16px;
+  }
+  .liquid-image {
+    font-size: 25px;
+    margin-left: 5px;
+  }
+  .glasses-image {
+    font-size: 25px;
+    margin-left: 15px;
   }
 }
 @media screen and (max-width: 600px) {
-  .navbar-nav {
-    margin-right: 2rem;
-  }
-  .bag-icon {
-    margin-right: 0px;
-    font-size: 1.5rem;
-  }
-
   .nav-item {
     justify-content: center;
     width: 25vw;
     align-content: center;
-
     font-size: 0.9rem;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 
   .dropDown {
@@ -368,29 +384,5 @@ button:hover {
     margin-top: 4px;
     font-size: 1.5rem;
     margin-left: 3rem;
-  }
-  .service-image {
-    font-size: 25px;
-    padding-left: 20px;
-  }
-  .contactLens-image {
-    font-size: 25px;
-    padding-left: 15px;
-  }
-  .liquid-image {
-    font-size: 25px;
-    padding-left: 10px;
-  }
-  .glasses-image {
-    font-size: 25px;
-    padding-left: 10px;
-  }
-  .glue-image {
-    width: 35px;
-    padding-left: 10px;
-  }
-  .service-image {
-    font-size: 25px;
-    padding-left: 5px;
   }
 }
