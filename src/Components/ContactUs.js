@@ -9,8 +9,13 @@ function ContactUs() {
         method="post"
         data-netlify="true"
         onSubmit="submit"
+        data-netlify-honeypot="bot-field"
       >
         <input type="hidden" name="form-name" value="contact" />
+        <div hidden>
+          <input name="bot-field" />
+        </div>
+
         <div>
           <input
             type="text"
