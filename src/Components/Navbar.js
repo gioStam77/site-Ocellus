@@ -23,21 +23,21 @@ function Navbar() {
     setclick(false);
   };
 
-  const onMouseEnterP = () => {
+  const onPointerEnterP = () => {
     if (window.innerWidth < 960) {
       setDropdownP(true);
     } else {
       setDropdownP(true);
     }
   };
-  const onMouseLeaveP = () => {
+  const onPointerLeaveP = () => {
     if (window.innerWidth < 960) {
       setDropdownP(false);
     } else {
       setDropdownP(false);
     }
   };
-  const onMouseEnterS = () => {
+  const onPointerEnterS = () => {
     if (window.innerWidth < 960) {
       setDropdownS(true);
     } else {
@@ -45,7 +45,7 @@ function Navbar() {
     }
   };
 
-  const onMouseLeaveS = () => {
+  const onPointerLeaveS = () => {
     if (window.innerWidth < 960) {
       setDropdownS(false);
     } else {
@@ -64,27 +64,25 @@ function Navbar() {
       </Link>
 
       <ul className="navbar-nav">
-        <li className="nav-item">
-          <Link to="/contactUs" className="nav-item">
-            <FaPhoneAlt className="tel-icon" /> 22870 22072
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/contactUs" className="nav-item">
-            <VscMail className="mail-icon" /> ocellus.gr@gmail.com
-          </Link>
-        </li>
+        <Link to="/contactUs" className="nav-item">
+          <FaPhoneAlt className="tel-icon" /> 22870 22072
+        </Link>
+
+        <Link to="/contactUs" className="nav-item">
+          <VscMail className="mail-icon  " />
+          ocellus.gr@gmail.com
+        </Link>
       </ul>
       <ul className={click ? "navbar-nav1 active" : "navbar-nav1"}>
         <li className="nav-item-links">
           <Link to="/" onClick={closeMobileMenu}>
-            <VscHome className="home-icon" />
+            <VscHome className="home-icon " />
           </Link>
         </li>
         <li
           className="nav-item-links"
-          onMouseEnter={onMouseEnterP}
-          onMouseLeave={onMouseLeaveP}
+          onPointerEnter={onPointerEnterP}
+          onPointerLeave={onPointerLeaveP}
         >
           <Link to="/product" onClick={closeMobileMenu}>
             {dropdownP && <DropDownP />}Προϊόντα{" "}
@@ -93,8 +91,8 @@ function Navbar() {
         </li>
         <li
           className="nav-item-links"
-          onMouseEnter={onMouseEnterS}
-          onMouseLeave={onMouseLeaveS}
+          onPointerEnter={onPointerEnterS}
+          onPointerLeave={onPointerLeaveS}
         >
           <Link to="/servises" onClick={closeMobileMenu}>
             {dropdownS && <DropDownS />}Υπηρεσίες

@@ -82,12 +82,11 @@ button:hover {
   font-size: large;
 }
 .mail-icon {
-  margin-top: 4px;
+  margin-right: 2px;
   font-size: 1.5rem;
 }
 .tel-icon {
   font-size: 1.3rem;
-  margin-left: 25px;
 }
 .bag-icon {
   font-size: 1.5rem;
@@ -96,18 +95,20 @@ button:hover {
 
 .navbar-nav {
   display: flex;
+  justify-content: space-around;
+  width: 39%;
 }
 
 .navbar-nav1 {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-
   letter-spacing: 1px;
 }
 .nav-item {
-  padding: 8px;
   font-size: 1.1rem;
+  justify-content: space-between;
+  align-items: center;
 }
 .nav-item:hover {
   color: var(--lightBlue);
@@ -124,9 +125,11 @@ button:hover {
 .menu-icon {
   display: none;
 }
+.menu-icon:hover {
+  cursor: pointer;
+}
 .home-icon {
   font-size: 1.7rem;
-  margin-left: 70px;
 }
 .user-icon {
   font-size: 1.7rem;
@@ -174,7 +177,7 @@ button:hover {
   padding-top: 50px;
 }
 .useOfContactLens {
-  margin: 10vh;
+  margin: 5vh;
   background-color: var(--mainWhite);
   box-sizing: border-box;
   border-radius: 10px;
@@ -187,11 +190,12 @@ button:hover {
 }
 .useOfContactLens img {
   width: 60vw;
+  max-width: 600px;
   height: auto;
 }
 .useOfContactLens p {
   margin: 10px;
-  padding: 10px;
+  padding: 5px;
   color: var(--mainBlue);
   text-align: match-parent;
 }
@@ -356,11 +360,7 @@ button:hover {
 }
 @media screen and (max-width: 600px) {
   .nav-item {
-    justify-content: center;
-    width: 25vw;
-    align-content: center;
     font-size: 0.9rem;
-    justify-content: center;
   }
 
   .dropDown {
