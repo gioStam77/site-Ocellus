@@ -189,9 +189,8 @@ button:hover {
   padding: 15px;
 }
 .useOfContactLens img {
-  width: 60vw;
-  max-width: 600px;
-  height: auto;
+  width: 50vw;
+  display: block;
 }
 .useOfContactLens p {
   margin: 10px;
@@ -267,6 +266,9 @@ button:hover {
 }
 
 @media screen and (max-width: 960px) {
+  * {
+    overflow-x: hidden;
+  }
   .menu-icon {
     display: block;
     position: absolute;
@@ -359,6 +361,9 @@ button:hover {
   }
 }
 @media screen and (max-width: 600px) {
+  * {
+    overflow-x: hidden;
+  }
   .nav-item {
     font-size: 0.9rem;
   }
@@ -384,5 +389,43 @@ button:hover {
     margin-top: 4px;
     font-size: 1.5rem;
     margin-left: 3rem;
+  }
+  @media screen and (max-width: 450px) {
+    * {
+      overflow-x: hidden;
+    }
+    .nav-item {
+      font-size: 0.6rem;
+    }
+
+    .dropDown {
+      display: flex;
+      overflow-y: hidden;
+      margin-top: 5%;
+      left: 20px;
+      align-content: center;
+      text-align: start;
+      justify-content: space-between;
+      font-size: small;
+      width: 430px;
+      height: 50px;
+      border-bottom-right-radius: 20%;
+    }
+    .tel-icon {
+      font-size: 1rem;
+      margin-left: 1rem;
+    }
+    .mail-icon {
+      margin-top: 4px;
+      font-size: 1.5rem;
+      margin-left: 1rem;
+    }
+  }
+  .form {
+    padding: 0.5rem;
+    margin: 2rem;
+
+    width: 343px;
+    height: auto;
   }
 }
