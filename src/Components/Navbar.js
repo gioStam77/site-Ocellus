@@ -23,35 +23,35 @@ function Navbar() {
     setclick(false);
   };
 
-  const onPointerEnterP = () => {
-    if (window.innerWidth < 960) {
-      setDropdownP(true);
-    } else {
-      setDropdownP(true);
-    }
-  };
-  const onPointerLeaveP = () => {
-    if (window.innerWidth < 960) {
-      setDropdownP(false);
-    } else {
-      setDropdownP(false);
-    }
-  };
-  const onPointerEnterS = () => {
-    if (window.innerWidth < 960) {
-      setDropdownS(true);
-    } else {
-      setDropdownS(true);
-    }
-  };
+  // const onPointerEnterP = () => {
+  //   if (window.innerWidth < 960) {
+  //     setDropdownP(true);
+  //   } else {
+  //     setDropdownP(true);
+  //   }
+  // };
+  // const onPointerLeaveP = () => {
+  //   if (window.innerWidth < 960) {
+  //     setDropdownP(false);
+  //   } else {
+  //     setDropdownP(false);
+  //   }
+  // };
+  // const onPointerEnterS = () => {
+  //   if (window.innerWidth < 960) {
+  //     setDropdownS(true);
+  //   } else {
+  //     setDropdownS(true);
+  //   }
+  // };
 
-  const onPointerLeaveS = () => {
-    if (window.innerWidth < 960) {
-      setDropdownS(false);
-    } else {
-      setDropdownS(false);
-    }
-  };
+  // const onPointerLeaveS = () => {
+  //   if (window.innerWidth < 960) {
+  //     setDropdownS(false);
+  //   } else {
+  //     setDropdownS(false);
+  //   }
+  // };
   return (
     <nav className="navbar">
       <Link to="/" className="nav-logo">
@@ -81,8 +81,10 @@ function Navbar() {
         </li>
         <li
           className="nav-item-links"
-          onPointerEnter={onPointerEnterP}
-          onPointerLeave={onPointerLeaveP}
+          onPointerEnter={() => setDropdownP(true)}
+          onPointerLeave={() => setDropdownP(false)}
+          onTouchStart={() => setDropdownP(true)}
+          onTouchEnd={() => setDropdownP(false)}
         >
           <Link to="/product" onClick={closeMobileMenu}>
             {dropdownP && <DropDownP />}Προϊόντα{" "}
@@ -91,8 +93,8 @@ function Navbar() {
         </li>
         <li
           className="nav-item-links"
-          onPointerEnter={onPointerEnterS}
-          onPointerLeave={onPointerLeaveS}
+          onPointerEnter={() => setDropdownS(true)}
+          onPointerLeave={() => setDropdownS(false)}
         >
           <Link to="/servises" onClick={closeMobileMenu}>
             {dropdownS && <DropDownS />}Υπηρεσίες
