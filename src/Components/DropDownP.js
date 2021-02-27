@@ -21,6 +21,7 @@ function DropDownP() {
                 className={item.cName}
                 to={item.path}
                 onClick={() => setClick(false)}
+                onTouchMove={() => setClick(false)}
               >
                 {item.title}
                 {item.image}
