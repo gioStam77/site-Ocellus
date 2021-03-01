@@ -13,7 +13,6 @@ function ContactUs() {
       ...values,
       [e.target.name]: e.target.value,
     });
-    return { handleChange };
   };
 
   const handleSubmit = (e) => {
