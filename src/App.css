@@ -232,37 +232,33 @@ button:hover {
   place-items: center;
 }
 .form {
-  margin-top: 15vh;
+  position: relative;
+  margin: 5rem 1.5rem 2rem 1.5rem;
   background-image: url(./IMAGES/takis2.jpg);
   background-position: center;
+  background-position-x: -70px;
   background-size: cover;
   box-sizing: border-box;
+  padding: 0 0.4rem;
 
-  width: 450px;
-  height: 300px;
+  min-width: 330px;
+  min-height: 300px;
   border-radius: 10px;
   box-shadow: 0 10px 12px rgba(0, 0, 0, 0.4);
 }
 .formItems {
-  margin-left: 50%;
+  margin-left: 40%;
   color: var(--mainBlue);
   font-size: 1rem;
 }
 
 .btn-form {
-  margin-left: 50%;
+  width: 10rem;
+  margin: 2rem 2rem;
   color: var(--mainBlue);
   box-sizing: border-box;
   border-radius: 10px;
   box-shadow: 0 10px 12px rgba(0, 0, 0, 0.4);
-}
-.formTel {
-  font-family: "Permanent Marker", cursive;
-  letter-spacing: O.3rem;
-  text-transform: uppercase;
-  color: var(--mainBlue);
-  font-size: clamp(0.9rem, 1.1rem, 2rem);
-  text-align: center;
 }
 
 @media screen and (max-width: 960px) {
@@ -292,7 +288,7 @@ button:hover {
     background-color: #009ffd;
     top: 80px;
     width: 100%;
-    height: 88vh;
+    height: 92vh;
     flex-direction: column;
     transform: translateX(100%);
     transition: transform 350ms ease-in-out;
@@ -301,7 +297,7 @@ button:hover {
     transform: translateX(0%);
   }
   .nav-item-links {
-    width: 10rem;
+    width: 39vw;
   }
   .home-icon {
     font-size: 1.7rem;
@@ -314,15 +310,17 @@ button:hover {
   .dropDown {
     display: flex;
     top: auto;
-    margin-top: 5%;
-    right: 65px;
+    margin-top: 7%;
+    position: absolute;
+    left: 1.1rem;
     align-content: center;
     align-items: center;
     text-align: start;
     justify-content: space-between;
     font-size: small;
-    width: 80%;
+    width: 90%;
     height: 50px;
+
     overflow-y: hidden;
     border-bottom-right-radius: 20%;
   }
@@ -368,19 +366,6 @@ button:hover {
     font-size: 0.9rem;
   }
 
-  .dropDown {
-    display: flex;
-    overflow-y: hidden;
-    margin-top: 5%;
-    left: 20px;
-    align-content: center;
-    text-align: start;
-    justify-content: space-between;
-    font-size: small;
-    width: 430px;
-    height: 50px;
-    border-bottom-right-radius: 20%;
-  }
   .tel-icon {
     font-size: 1.3rem;
     margin-left: 1rem;
@@ -397,20 +382,6 @@ button:hover {
     .nav-item {
       font-size: 0.6rem;
     }
-
-    .dropDown {
-      display: flex;
-      overflow-y: hidden;
-      margin-top: 5%;
-      left: 20px;
-      align-content: center;
-      text-align: start;
-      justify-content: space-between;
-      font-size: small;
-      width: 430px;
-      height: 50px;
-      border-bottom-right-radius: 20%;
-    }
     .tel-icon {
       font-size: 1rem;
       margin-left: 1rem;
@@ -421,11 +392,11 @@ button:hover {
       margin-left: 1rem;
     }
   }
-  .form {
+  /* .form {
     padding: 0.5rem;
     margin: 2rem;
 
     width: 343px;
     height: auto;
-  }
+  } */
 }

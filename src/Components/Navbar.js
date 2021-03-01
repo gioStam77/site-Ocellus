@@ -22,6 +22,12 @@ function Navbar() {
   const closeMobileMenu = () => {
     setclick(false);
   };
+  const extendElementsP = () => {
+    dropdownP ? setDropdownP(false) : setDropdownP(true);
+  };
+  const extendElementsS = () => {
+    dropdownS ? setDropdownS(false) : setDropdownS(true);
+  };
 
   // const onPointerEnterP = () => {
   //   if (window.innerWidth < 960) {
@@ -81,23 +87,35 @@ function Navbar() {
         </li>
         <li
           className="nav-item-links"
-          onPointerEnter={() => setDropdownP(true)}
-          onPointerLeave={() => setDropdownP(false)}
-          onTouchStart={() => setDropdownP(true)}
-          onTouchEnd={() => setDropdownP(false)}
+          // onPointerEnter={() => setDropdownP(true)}
+          // onPointerLeave={() => setDropdownP(false)}
+          // onTouchStart={() => setDropdownP(true)}
+          // onTouchEnd={() => setDropdownP(false)}
         >
-          <Link to="/product" onClick={closeMobileMenu}>
-            {dropdownP && <DropDownP />}Προϊόντα{" "}
+          <Link to="/product" onClick={extendElementsP}>
+            {dropdownP && (
+              <DropDownP
+                onClick={handleClick}
+                onCloseMobileMenu={closeMobileMenu}
+              />
+            )}
+            Προϊόντα
           </Link>
           <FaRegCaretSquareDown className="icon-down" />
         </li>
         <li
           className="nav-item-links"
-          onPointerEnter={() => setDropdownS(true)}
-          onPointerLeave={() => setDropdownS(false)}
+          // onPointerEnter={() => setDropdownS(true)}
+          // onPointerLeave={() => setDropdownS(false)}
         >
-          <Link to="/servises" onClick={closeMobileMenu}>
-            {dropdownS && <DropDownS />}Υπηρεσίες
+          <Link to="/servises" onClick={extendElementsS}>
+            {dropdownS && (
+              <DropDownS
+                onClick={handleClick}
+                onCloseMobileMenu={closeMobileMenu}
+              />
+            )}
+            Υπηρεσίες
           </Link>
 
           <FaRegCaretSquareDown className="icon-down" />

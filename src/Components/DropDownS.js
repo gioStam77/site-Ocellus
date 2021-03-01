@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ProductListS } from "./ProductListS";
 import { Link } from "react-router-dom";
 
-function DropDownS() {
+function DropDownS(props) {
   const [click, setClick] = useState(false);
 
   const handleClick = () => {
@@ -20,7 +20,7 @@ function DropDownS() {
               <Link
                 className={item.cName}
                 to={item.path}
-                onClick={() => setClick(false)}
+                onClick={props.onCloseMobileMenu}
               >
                 {item.title}
                 {item.image}

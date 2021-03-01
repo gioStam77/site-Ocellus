@@ -1,6 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 
 function ContactUs() {
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [subject, setSubject] = useState();
+  const [message, setMessage] = useState();
+
+  const handleChange = (event) => {
+    setName(event.target.value);
+    setEmail(event.target.value);
+    setSubject(event.target.value);
+    setMessage(event.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(`${name}`);
+  };
+
   return (
     <div className="containerForm">
       <form
@@ -8,7 +25,7 @@ function ContactUs() {
         name="contact"
         method="post"
         data-netlify="true"
-        onSubmit="submit"
+        onSubmit={handleSubmit}
         data-netlify-honeypot="bot-field"
       >
         <input type="hidden" name="form-name" value="contact" />
@@ -22,6 +39,8 @@ function ContactUs() {
             className="formItems"
             placeholder="Ονομα"
             name="name"
+            onChange={handleChange}
+            value={name}
           />
         </div>
         <div>
@@ -30,6 +49,8 @@ function ContactUs() {
             className="formItems"
             placeholder="Email "
             name="email"
+            value={email}
+            onChange={handleChange}
           />
         </div>
         <div>
@@ -38,6 +59,8 @@ function ContactUs() {
             className="formItems"
             placeholder="Τίτλος"
             name="subject"
+            value={subject}
+            onChange={handleChange}
           />
         </div>
         <div>
@@ -48,6 +71,8 @@ function ContactUs() {
             rows="9"
             placeholder="Το μήνυμά σας"
             name="message"
+            onChange={handleChange}
+            value={message}
           ></textarea>
         </div>
         <div>
