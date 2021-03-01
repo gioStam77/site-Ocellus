@@ -1,4 +1,3 @@
-import { icons } from "react-icons/lib";
 import { FaRegEye } from "react-icons/fa";
 import { GiErlenmeyer } from "react-icons/gi";
 import { FaGlasses } from "react-icons/fa";

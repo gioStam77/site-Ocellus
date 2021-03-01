@@ -6,7 +6,7 @@ function UseOfContactLens() {
       <div className="useOfContactLens">
         <h3 className="text-title">οδηγίες χρήσης φακών επαφής</h3>
 
-        <img src="./images/φ.επαφης.jpg" />
+        <img src="./images/φ.επαφης.jpg" alt="εικόνα φ.επαφής" />
         <p>
           Εξετάστε τους φακούς για να βεβαιωθείτε ότι είναι υγροί, καθαροί και
           χωρίς γρατσουνιές ή ρωγμές, πριν ακόμα προσπαθήσετε να τους φορέσετε.

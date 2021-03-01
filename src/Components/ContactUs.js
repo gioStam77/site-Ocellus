@@ -1,21 +1,23 @@
 import React, { useState } from "react";
 
 function ContactUs() {
-  const [name, setName] = useState();
-  const [email, setEmail] = useState();
-  const [subject, setSubject] = useState();
-  const [message, setMessage] = useState();
+  const [values, setValues] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
-  const handleChange = (event) => {
-    setName(event.target.value);
-    setEmail(event.target.value);
-    setSubject(event.target.value);
-    setMessage(event.target.value);
+  const handleChange = (e) => {
+    setValues({
+      ...values,
+      [e.target.name]: e.target.value,
+    });
+    return { handleChange };
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(`${name}`);
   };
 
   return (
@@ -39,8 +41,8 @@ function ContactUs() {
             className="formItems"
             placeholder="Ονομα"
             name="name"
+            value={values.name}
             onChange={handleChange}
-            value={name}
           />
         </div>
         <div>
@@ -49,7 +51,7 @@ function ContactUs() {
             className="formItems"
             placeholder="Email "
             name="email"
-            value={email}
+            value={values.email}
             onChange={handleChange}
           />
         </div>
@@ -59,7 +61,7 @@ function ContactUs() {
             className="formItems"
             placeholder="Τίτλος"
             name="subject"
-            value={subject}
+            value={values.subject}
             onChange={handleChange}
           />
         </div>
@@ -72,13 +74,15 @@ function ContactUs() {
             placeholder="Το μήνυμά σας"
             name="message"
             onChange={handleChange}
-            value={message}
+            value={values.message}
           ></textarea>
         </div>
         <div>
-          <button type="submit" className="btn-form">
-            Αποστολή Μηνύματος
-          </button>
+          <input
+            type="submit"
+            value="Αποστολή Μηνύματος"
+            className="btn-form"
+          />
         </div>
       </form>
     </div>

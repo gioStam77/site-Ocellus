@@ -8,6 +8,7 @@ function UnderConstraction(props) {
       <img
         className="underConstraction-image"
         src="./images/underConstraction1.png"
+        alt="εικόνα υπο κατασκευή"
       />
     </div>
   );

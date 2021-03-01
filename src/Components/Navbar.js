@@ -6,7 +6,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { VscHome } from "react-icons/vsc";
 import { BsBag } from "react-icons/bs";
 
-import { IoPersonOutline, IoTerminal } from "react-icons/io5";
+import { IoPersonOutline } from "react-icons/io5";
 import { VscMail } from "react-icons/vsc";
 import DropDownP from "./DropDownP";
 import DropDownS from "./DropDownS";
@@ -29,35 +29,6 @@ function Navbar() {
     dropdownS ? setDropdownS(false) : setDropdownS(true);
   };
 
-  // const onPointerEnterP = () => {
-  //   if (window.innerWidth < 960) {
-  //     setDropdownP(true);
-  //   } else {
-  //     setDropdownP(true);
-  //   }
-  // };
-  // const onPointerLeaveP = () => {
-  //   if (window.innerWidth < 960) {
-  //     setDropdownP(false);
-  //   } else {
-  //     setDropdownP(false);
-  //   }
-  // };
-  // const onPointerEnterS = () => {
-  //   if (window.innerWidth < 960) {
-  //     setDropdownS(true);
-  //   } else {
-  //     setDropdownS(true);
-  //   }
-  // };
-
-  // const onPointerLeaveS = () => {
-  //   if (window.innerWidth < 960) {
-  //     setDropdownS(false);
-  //   } else {
-  //     setDropdownS(false);
-  //   }
-  // };
   return (
     <nav className="navbar">
       <Link to="/" className="nav-logo">
@@ -85,13 +56,7 @@ function Navbar() {
             <VscHome className="home-icon " />
           </Link>
         </li>
-        <li
-          className="nav-item-links"
-          // onPointerEnter={() => setDropdownP(true)}
-          // onPointerLeave={() => setDropdownP(false)}
-          // onTouchStart={() => setDropdownP(true)}
-          // onTouchEnd={() => setDropdownP(false)}
-        >
+        <li className="nav-item-links">
           <Link to="/product" onClick={extendElementsP}>
             {dropdownP && (
               <DropDownP
@@ -103,11 +68,7 @@ function Navbar() {
           </Link>
           <FaRegCaretSquareDown className="icon-down" />
         </li>
-        <li
-          className="nav-item-links"
-          // onPointerEnter={() => setDropdownS(true)}
-          // onPointerLeave={() => setDropdownS(false)}
-        >
+        <li className="nav-item-links">
           <Link to="/servises" onClick={extendElementsS}>
             {dropdownS && (
               <DropDownS
