@@ -43,7 +43,7 @@ function Navbar() {
       </Link>
 
       <ul className="navbar-nav">
-        <Link to="tel:0306972923896" className="nav-item">
+        <Link to="/contactUs" className="nav-item">
           <FaPhoneAlt className="tel-icon" /> 22870 22072
         </Link>
 
