@@ -21,6 +21,8 @@ function Navbar() {
   };
   const closeMobileMenu = () => {
     setclick(false);
+    setDropdownP(false);
+    setDropdownS(false);
   };
   const extendElementsP = () => {
     dropdownP ? setDropdownP(false) : setDropdownP(true);
