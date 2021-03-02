@@ -24,9 +24,11 @@ function Navbar() {
   };
   const extendElementsP = () => {
     dropdownP ? setDropdownP(false) : setDropdownP(true);
+    setDropdownS(false);
   };
   const extendElementsS = () => {
     dropdownS ? setDropdownS(false) : setDropdownS(true);
+  setDropdownP(false);
   };
 
   return (
@@ -41,7 +43,7 @@ function Navbar() {
       </Link>
 
       <ul className="navbar-nav">
-        <Link to="/contactUs" className="nav-item">
+        <Link to="tel:0306972923896" className="nav-item">
           <FaPhoneAlt className="tel-icon" /> 22870 22072
         </Link>
 
