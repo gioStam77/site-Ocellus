@@ -9,6 +9,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  position: relative;
   text-decoration: none;
   color: var(--mainWhite);
   overflow-x: hidden;
@@ -43,7 +44,7 @@ button:hover {
   letter-spacing: O.3rem;
   text-transform: uppercase;
   color: var(--mainBlue);
-  font-size: clamp(0.9rem, 1.1rem, 2rem);
+  font-size: clamp(0.9rem, 1.2rem, 2rem);
   text-align: center;
 }
 .text-bright {
@@ -145,7 +146,7 @@ button:hover {
   background-color: var(--mainBlue);
   z-index: 1;
   width: 160px;
-  position: absolute;
+  position: fixed;
   top: 50px;
   text-align: center;
   justify-content: center;
@@ -287,7 +288,7 @@ button:hover {
   .navbar-nav1 {
     z-index: 1;
     display: flex;
-    position: absolute;
+    position: fixed;
     right: 0;
     width: 100%;
     align-items: center;
@@ -298,7 +299,7 @@ button:hover {
     height: 100%;
     flex-direction: column;
     transform: translateX(100%);
-    transition: transform 350ms ease-in-out;
+    transition: transform 300ms ease-in-out;
     padding: 1rem 0 8rem;
   }
   .active {
@@ -319,7 +320,7 @@ button:hover {
     display: flex;
     top: auto;
     margin-top: 8%;
-    position: absolute;
+    position: fixed;
     left: 1.1rem;
     align-content: center;
     align-items: center;

@@ -18,6 +18,8 @@ function Navbar() {
 
   const handleClick = () => {
     setclick(!click);
+    setDropdownP(false);
+    setDropdownS(false);
   };
   const closeMobileMenu = () => {
     setclick(false);
