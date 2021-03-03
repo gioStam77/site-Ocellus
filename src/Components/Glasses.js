@@ -13,7 +13,7 @@ function Glasses() {
           className="glassesItem"
           style={{ backgroundImage: `url(${daSole})` }}
         >
-          <h3>ηλιου</h3>
+          <h3 className="text-blue">ηλιου</h3>
         </li>
       </Link>
       <Link to="/general">
@@ -24,7 +24,7 @@ function Glasses() {
             backgroundPositionY: "10%",
           }}
         >
-          <h3 className="text-title">προσφορες</h3>
+          <h3 className="text-blue">προσφορες</h3>
         </li>
       </Link>
       <Link to="/vista">
@@ -32,7 +32,7 @@ function Glasses() {
           className="glassesItem"
           style={{ backgroundImage: `url(${daVista})` }}
         >
-          <h3 className="text-title">οράσεως</h3>
+          <h3 className="text-blue">οράσεως</h3>
         </li>
       </Link>
     </ul>

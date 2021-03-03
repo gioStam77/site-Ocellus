@@ -4,8 +4,7 @@ import ContactUs from "./Components/ContactUs";
 import Default from "./Components/Default";
 import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
-import Products from "./Components/Products";
-import Servises from "./Components/Servises";
+
 import SingUp from "./Components/SingUp";
 import "./App.css";
 import Glasses from "./Components/Glasses";
@@ -28,11 +27,10 @@ function App() {
       <div className="main">
         <Switch>
           <Route exact path="/" component={Home}></Route>
-          <Route path="/products" component={Products}></Route>
+
           <Route path="/glasses" component={Glasses}></Route>
           <Route path="/contactLens" component={ContactLens}></Route>
           <Route path="/solutions" component={Solutions}></Route>
-          <Route path="/services" component={Servises}></Route>
           <Route path="/general" component={UnderConstraction}></Route>
           <Route path="/signUp" component={SingUp}></Route>
           <Route path="/contactUs" component={ContactUs}></Route>

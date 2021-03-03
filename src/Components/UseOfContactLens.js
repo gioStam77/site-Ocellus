@@ -4,7 +4,7 @@ function UseOfContactLens() {
   return (
     <>
       <div className="useOfContactLens">
-        <h3 className="text-title">οδηγίες χρήσης φακών επαφής</h3>
+        <h3 className="text-blue">οδηγίες χρήσης φακών επαφής</h3>
 
         <img src="./images/φ.επαφης.jpg" alt="εικόνα φ.επαφής" />
         <p>

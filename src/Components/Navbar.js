@@ -30,7 +30,7 @@ function Navbar() {
   };
   const extendElementsS = () => {
     dropdownS ? setDropdownS(false) : setDropdownS(true);
-  setDropdownP(false);
+    setDropdownP(false);
   };
 
   return (
@@ -45,11 +45,11 @@ function Navbar() {
       </Link>
 
       <ul className="navbar-nav">
-        <Link to="/contactUs" className="nav-item">
+        <Link to="/contactUs" className="nav-item" onClick={closeMobileMenu}>
           <FaPhoneAlt className="tel-icon" /> 22870 22072
         </Link>
 
-        <Link to="/contactUs" className="nav-item">
+        <Link to="/contactUs" className="nav-item" onClick={closeMobileMenu}>
           <VscMail className="mail-icon  " />
           ocellus.gr@gmail.com
         </Link>
