@@ -11,7 +11,7 @@ function ContactLens() {
           className="glassesItem"
           style={{ backgroundImage: `url(${cLens})` }}
         >
-          <h3>ημερησιοι</h3>
+          <h3 className="text-blue">ημερησιοι</h3>
         </li>
       </Link>
       <Link to="/monthlies">
@@ -19,7 +19,7 @@ function ContactLens() {
           className="glassesItem"
           style={{ backgroundImage: `url(${cLens})` }}
         >
-          <h3 className="text-title">μηνιαιοι</h3>
+          <h3 className="text-blue">μηνιαιοι</h3>
         </li>
       </Link>
       <Link to="/year">
@@ -27,7 +27,7 @@ function ContactLens() {
           className="glassesItem"
           style={{ backgroundImage: `url(${cLens})` }}
         >
-          <h3 className="text-title">ετησιοι</h3>
+          <h3 className="text-blue">ετησιοι</h3>
         </li>
       </Link>
     </ul>

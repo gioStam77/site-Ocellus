@@ -101,7 +101,7 @@ button:hover {
 
 .navbar-nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 39%;
 }
 
@@ -319,7 +319,7 @@ button:hover {
   .dropDown {
     display: flex;
     top: auto;
-    margin-top: 8%;
+    margin-top: 27px;
     position: fixed;
     left: 1.1rem;
     align-content: center;
@@ -367,6 +367,7 @@ button:hover {
     margin-left: 15px;
   }
 }
+
 @media screen and (max-width: 600px) {
   * {
     overflow-x: hidden;
@@ -384,28 +385,21 @@ button:hover {
     font-size: 1.5rem;
     margin-left: 3rem;
   }
-  @media screen and (max-width: 450px) {
-    * {
-      overflow-x: hidden;
-    }
-    .nav-item {
-      font-size: 0.6rem;
-    }
-    .tel-icon {
-      font-size: 1rem;
-      margin-left: 1rem;
-    }
-    .mail-icon {
-      margin-top: 4px;
-      font-size: 1.5rem;
-      margin-left: 1rem;
-    }
+}
+@media screen and (max-width: 450px) and (orientation: portrait) {
+  * {
+    overflow-x: hidden;
   }
-  /* .form {
-    padding: 0.5rem;
-    margin: 2rem;
-
-    width: 343px;
-    height: auto;
-  } */
+  .nav-item {
+    font-size: 0.6rem;
+  }
+  .tel-icon {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+  .mail-icon {
+    margin-top: 4px;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
 }
