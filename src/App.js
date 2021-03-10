@@ -24,7 +24,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="main">
+      <div>
         <Switch>
           <Route exact path="/" component={Home}></Route>
 
@@ -38,7 +38,7 @@ function App() {
           <Route path="/useOfContactLens" component={UseOfContactLens}></Route>
           <Route path="/sole" component={Sole}></Route>
           <Route path="/vista" component={Vista}></Route>
-          <Route path="/dayContactLensses" component={Dailies}></Route>
+          <Route path="/dailies" component={Dailies}></Route>
           <Route path="/monthlies" component={Monthly}></Route>
           <Route path="/year" component={Year}></Route>
           <Route path="/default" component={Default}></Route>

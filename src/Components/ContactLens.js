@@ -5,7 +5,7 @@ import cLens from "../IMAGES/cLens1.jpg";
 function ContactLens() {
   return (
     <ul className="glassesContainer">
-      <Link to="/dayContactLensses">
+      <Link to="/dailies">
         {" "}
         <li
           className="glassesItem"
