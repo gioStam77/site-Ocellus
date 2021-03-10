@@ -26,7 +26,7 @@ function Dailies() {
           <h6>8,40mm</h6>
           <h6>14.20mm</h6>
           <h6>Ημερήσια</h6>
-          <h6>30 τεμαχίων</h6>
+          <h6>30 τεμ.</h6>
         </div>
 
         <div className="a5">
@@ -88,7 +88,7 @@ function Dailies() {
           <h6>8,70mm</h6>
           <h6>14.20mm</h6>
           <h6>Ημερήσια</h6>
-          <h6>30 τεμαχίων</h6>
+          <h6>30 τεμ.</h6>
         </div>
 
         <div className="a5">
@@ -122,7 +122,7 @@ function Dailies() {
           <h6>8,70mm</h6>
           <h6>14.20</h6>
           <h6>Ημερήσια</h6>
-          <h6>30 τεμαχίων</h6>
+          <h6>30 τεμ.</h6>
         </div>
 
         <div className="a5">

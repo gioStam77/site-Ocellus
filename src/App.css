@@ -296,11 +296,11 @@ button:hover {
 }
 .a1 p {
   color: var(--lightBlue);
-  font-size: clamp(0.6rem, 1.2vw, 0.7rem);
+  font-size: clamp(0.5rem, 1.2vw, 0.7rem);
 }
 .a1 h4 {
   color: var(--lightBlue);
-  font-size: clamp(0.7rem, 1.2vw, 1.2rem);
+  font-size: clamp(0.6rem, 1.2vw, 1.2rem);
 }
 
 .a2 {
@@ -314,7 +314,7 @@ button:hover {
   border-radius: 10px;
 }
 .a2 img {
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 
