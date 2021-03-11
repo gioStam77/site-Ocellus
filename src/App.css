@@ -72,7 +72,11 @@ button:hover {
 }
 
 .navbar {
-  background: var(--mainBlue);
+  background: linear-gradient(
+    to bottom left,
+    var(--mainBlue),
+    var(--lightBlue)
+  );
 
   height: 80px;
   width: 100%;
