@@ -3,7 +3,7 @@ import UnderConstraction from "./UnderConstraction";
 
 function Dailies() {
   return (
-    <>
+    <div className="dailies-wrapper">
       <div className="dailies-container">
         <div className="a1">
           <h3 className="text-blue">MyDay</h3>
@@ -14,7 +14,7 @@ function Dailies() {
         </div>
         <div className="a3">
           <h6>Yλικό:</h6>
-          <h6>Περιεκτ. σε νερό:</h6>
+          <h6>Περκτ.σε νερό:</h6>
           <h6>Καμπ/τητα:</h6>
           <h6>Διάμετρος:</h6>
           <h6>Χρήση:</h6>
@@ -43,7 +43,7 @@ function Dailies() {
         </div>
         <div className="a3">
           <h6>Yλικό:</h6>
-          <h6>Περιεκτ. σε νερό:</h6>
+          <h6>Περκτ.σε νερό:</h6>
           <h6>Καμπ/τα:</h6>
           <h6>Διάμετρος:</h6>
           <h6>Χρήση:</h6>
@@ -76,7 +76,7 @@ function Dailies() {
         </div>
         <div className="a3">
           <h6>Yλικό:</h6>
-          <h6>Περιεκτ.σε νερό:</h6>
+          <h6>Περκτ.σε νερό:</h6>
           <h6>Καμπ/τητα:</h6>
           <h6>Διάμετρος:</h6>
           <h6>Χρήση:</h6>
@@ -110,7 +110,7 @@ function Dailies() {
         </div>
         <div className="a3">
           <h6>Yλικό:</h6>
-          <h6>Περιεκτ. σε νερό:</h6>
+          <h6>Περκτ.σε νερό:</h6>
           <h6>Καμπ/τητα:</h6>
           <h6>Διάμετρος:</h6>
           <h6>Χρήση:</h6>
@@ -129,7 +129,7 @@ function Dailies() {
           <img src="./images/CooperVision.jpg" alt="cooper vision image" />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

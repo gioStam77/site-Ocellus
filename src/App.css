@@ -216,6 +216,7 @@ button:hover {
   align-content: center;
   margin: 5px;
 }
+
 .glassesItem {
   flex: 0 1 auto;
   margin: 5px;
@@ -230,6 +231,7 @@ button:hover {
   border-radius: 10px;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
 }
+
 .glassesItem h3 {
   color: var(--mainBlue);
   text-transform: uppercase;
@@ -269,6 +271,7 @@ button:hover {
   border-radius: 10px;
   box-shadow: 12px 12px 10px rgba(109, 14, 14, 0.8);
 }
+
 .dailies-container {
   background-image: url(./IMAGES/cLens1.jpg);
   box-sizing: border-box;
@@ -280,7 +283,8 @@ button:hover {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 30px 60px;
   grid-gap: 3px;
-  padding: 10px;
+  padding: 7px;
+  transition: max-width 0.2s;
 }
 
 .a1 {
@@ -339,7 +343,7 @@ button:hover {
 
 .a3 h6 {
   color: var(--lightBlue);
-  font-size: clamp(0.5rem, 1.2vw, 1rem);
+  font-size: clamp(0.42rem, 1.2vw, 1rem);
 }
 .a4 {
   background-color: var(--mainWhite);
@@ -374,6 +378,7 @@ button:hover {
   * {
     overflow-x: hidden;
   }
+
   .menu-icon {
     display: block;
     position: absolute;
@@ -474,6 +479,17 @@ button:hover {
   * {
     overflow-x: hidden;
   }
+  .dailies-wrapper {
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .dailies-wrapper :hover {
+    max-width: 90%;
+
+    margin: auto;
+  }
+
   .nav-item {
     font-size: 0.9rem;
   }
@@ -492,6 +508,7 @@ button:hover {
   * {
     overflow-x: hidden;
   }
+
   .nav-item {
     font-size: 0.6rem;
   }
