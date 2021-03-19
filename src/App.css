@@ -15,11 +15,19 @@
   overflow-x: hidden;
 }
 
-body {
+body,
+html {
+  /* height: 100%; */
   font-family: "Oswald", sans-serif;
   background-image: url(../src/IMAGES/TAPETSARIA.jpg);
   background-repeat: repeat;
   background-size: 7rem;
+}
+.page-wrapper {
+  height: 100%;
+}
+.page-container {
+  min-height: 100vh;
 }
 
 ul {
@@ -284,7 +292,7 @@ button:hover {
   grid-template-rows: 30px 60px;
   grid-gap: 3px;
   padding: 7px;
-  transition: max-width 0.2s;
+  transform: scale(1);
 }
 
 .a1 {
@@ -373,7 +381,52 @@ button:hover {
   width: 100%;
   height: auto;
 }
+.foo-wrapper {
+  background: linear-gradient(
+    to bottom left,
+    var(--mainBlue),
+    var(--lightBlue)
+  );
+  padding: 0.5rem;
+}
+.foo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.foo-container p {
+  display: grid;
+  place-items: center;
+  font-size: clamp(0.7rem, 1.5vw, 1rem);
+}
+.foo-row {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.foo-col {
+  font-size: clamp(0.6rem, 1.5vw, 1rem);
+  padding-right: 4px;
+}
+.foo-col h3 {
+  text-transform: capitalize;
+  padding-bottom: 15px;
+}
 
+.form-footer {
+  transform: scale(1);
+}
+.btn-form-footer {
+  width: 5rem;
+
+  color: var(--mainBlue);
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 12px 12px 10px rgba(109, 14, 14, 0.8);
+}
+.formItems-footer {
+  color: var(--mainBlue);
+}
 @media screen and (max-width: 960px) {
   * {
     overflow-x: hidden;
@@ -479,15 +532,9 @@ button:hover {
   * {
     overflow-x: hidden;
   }
-  .dailies-wrapper {
-    width: 100%;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-  .dailies-wrapper :hover {
-    max-width: 90%;
-
-    margin: auto;
+  .dailies-container {
+    transform: scale(1.15);
+    margin-top: 1.8rem;
   }
 
   .nav-item {
@@ -502,6 +549,9 @@ button:hover {
     margin-top: 4px;
     font-size: 1.5rem;
     margin-left: 3rem;
+  }
+  .form-footer {
+    transform: scale(0.9);
   }
 }
 @media screen and (max-width: 450px) and (orientation: portrait) {

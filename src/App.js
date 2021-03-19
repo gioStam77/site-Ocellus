@@ -19,31 +19,40 @@ import Vista from "./Components/Vista";
 import Dailies from "./Components/Dailies";
 import Monthly from "./Components/Monthly";
 import Year from "./Components/Year";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
     <>
       <Navbar />
-      <div>
-        <Switch>
-          <Route exact path="/" component={Home}></Route>
 
-          <Route path="/glasses" component={Glasses}></Route>
-          <Route path="/contactLens" component={ContactLens}></Route>
-          <Route path="/solutions" component={Solutions}></Route>
-          <Route path="/general" component={UnderConstraction}></Route>
-          <Route path="/signUp" component={SingUp}></Route>
-          <Route path="/contactUs" component={ContactUs}></Route>
-          <Route path="/cart" component={Cart}></Route>
-          <Route path="/useOfContactLens" component={UseOfContactLens}></Route>
-          <Route path="/sole" component={Sole}></Route>
-          <Route path="/vista" component={Vista}></Route>
-          <Route path="/dailies" component={Dailies}></Route>
-          <Route path="/monthlies" component={Monthly}></Route>
-          <Route path="/year" component={Year}></Route>
-          <Route path="/default" component={Default}></Route>
-        </Switch>
+      <div className="page-wrapper">
+        <div className="page-container">
+          <Switch>
+            <Route exact path="/" component={Home}></Route>
+
+            <Route path="/glasses" component={Glasses}></Route>
+            <Route path="/contactLens" component={ContactLens}></Route>
+            <Route path="/solutions" component={Solutions}></Route>
+            <Route path="/general" component={UnderConstraction}></Route>
+            <Route path="/signUp" component={SingUp}></Route>
+            <Route path="/contactUs" component={ContactUs}></Route>
+            <Route path="/cart" component={Cart}></Route>
+            <Route
+              path="/useOfContactLens"
+              component={UseOfContactLens}
+            ></Route>
+            <Route path="/sole" component={Sole}></Route>
+            <Route path="/vista" component={Vista}></Route>
+            <Route path="/dailies" component={Dailies}></Route>
+            <Route path="/monthlies" component={Monthly}></Route>
+            <Route path="/year" component={Year}></Route>
+            <Route path="/default" component={Default}></Route>
+          </Switch>
+        </div>
       </div>
+
+      <Footer />
     </>
   );
 }
