@@ -83,7 +83,6 @@ function Footer() {
                     name="message"
                   ></textarea>
                 </div>
-                <div data-netlify-recaptcha="true"></div>
                 <div>
                   <input
                     type="submit"
