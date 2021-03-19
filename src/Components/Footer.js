@@ -54,7 +54,7 @@ function Footer() {
               <form
                 className="form-footer"
                 name="contact-footer"
-                action="/thanks"
+                action="post"
                 method="post"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
