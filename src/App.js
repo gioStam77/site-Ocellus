@@ -38,6 +38,7 @@ function App() {
             <Route path="/signUp" component={SingUp}></Route>
             <Route path="/contactUs" component={ContactUs}></Route>
             <Route path="/cart" component={Cart}></Route>
+
             <Route
               path="/useOfContactLens"
               component={UseOfContactLens}
