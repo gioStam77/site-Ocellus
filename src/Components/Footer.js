@@ -18,8 +18,8 @@ function Footer() {
               <li>διεύθυνση: Π.Τριοβάσαλος</li>
               <li>Μήλος , Κυκλάδες</li>
               <li>Τ.Κ 84800</li>
-              <li style={{ fontSize: "0.8rem" }}>
-                <VscMail style={{ fontSize: "1rem" }} />
+              <li>
+                <VscMail />
                 <Link to="/contactUs">ocellus.gr@gmail.com</Link>
               </li>
             </ul>
