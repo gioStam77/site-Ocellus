@@ -253,22 +253,28 @@ button:hover {
 }
 .form {
   position: relative;
-  margin: 5rem 1.5rem 2rem 1.5rem;
+  margin: 5rem auto;
   background-image: url(./IMAGES/takis2.jpg);
   background-position: center;
-  background-position-x: -70px;
   background-size: cover;
   box-sizing: border-box;
   padding: 0 0.4rem;
-  min-width: 330px;
-  min-height: 300px;
+  width: 450px;
   border-radius: 10px;
   box-shadow: 12px 12px 10px rgba(109, 14, 14, 0.8);
+  transform: scale(1);
 }
 .formItems {
+  margin-left: 50%;
+  margin-top: 4px;
+  color: var(--mainBlue);
+  font-size: 0.9rem;
+}
+.formItems-file {
   margin-left: 40%;
   color: var(--mainBlue);
-  font-size: 1rem;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .btn-form {
@@ -397,7 +403,7 @@ button:hover {
 .foo-container p {
   display: grid;
   place-items: center;
-  font-size: clamp(0.7rem, 1.5vw, 1rem);
+  font-size: clamp(0.6rem, 1.5vw, 1rem);
 }
 .foo-row {
   display: flex;
@@ -405,12 +411,13 @@ button:hover {
   align-content: space-between;
 }
 .foo-col {
-  font-size: clamp(0.6rem, 1.5vw, 1rem);
-  padding-right: 4px;
+  font-size: clamp(0.5rem, 1.5vw, 1rem);
 }
 .foo-col h3 {
   text-transform: capitalize;
   padding-bottom: 15px;
+  font-size: clamp(0.65rem, 1.5vw, 1.2rem);
+  padding-right: 25px;
 }
 
 .form-footer {
@@ -553,6 +560,9 @@ button:hover {
   .form-footer {
     transform: scale(0.9);
   }
+  .form {
+    transform: scale(0.9);
+  }
 }
 @media screen and (max-width: 450px) and (orientation: portrait) {
   * {
@@ -570,5 +580,18 @@ button:hover {
     margin-top: 4px;
     font-size: 1.5rem;
     margin-left: 1rem;
+  }
+  .form-footer {
+    transform: scale(0.8);
+  }
+  .form {
+    transform: scale(0.75);
+    margin-left: -10%;
+  }
+}
+@media screen and (max-width: 360px) and (orientation: portrait) {
+  .form {
+    transform: scale(0.7);
+    margin-left: -13%;
   }
 }

@@ -52,6 +52,17 @@ function ContactUs() {
         </div>
         <div>
           <input
+            type="file"
+            className="formItems-file"
+            placeholder="Upload File"
+            name="myfile"
+          />
+        </div>
+        <div className="formItems">
+          <div data-netlify-recapcha="true"></div>
+        </div>
+        <div>
+          <input
             type="submit"
             value="Αποστολή Μηνύματος"
             className="btn-form"
