@@ -78,10 +78,18 @@ function Footer() {
                     className="formItems-footer"
                     id=""
                     cols="22"
-                    rows="6"
+                    rows="3"
                     placeholder="Το μήνυμά σας"
                     name="message"
                   ></textarea>
+                </div>
+                <div>
+                  <input
+                    type="file"
+                    placeholder="Upload File"
+                    name="myfile"
+                    className="footer-file"
+                  />
                 </div>
                 <div>
                   <input

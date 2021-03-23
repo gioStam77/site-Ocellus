@@ -58,9 +58,7 @@ function ContactUs() {
             name="myfile"
           />
         </div>
-        <div className="formItems">
-          <div data-netlify-recapcha="true"></div>
-        </div>
+
         <div>
           <input
             type="submit"

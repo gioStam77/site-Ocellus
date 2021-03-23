@@ -415,13 +415,17 @@ button:hover {
 }
 .foo-col h3 {
   text-transform: capitalize;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   font-size: clamp(0.65rem, 1.5vw, 1.2rem);
-  padding-right: 25px;
+  padding-right: 15px;
 }
 
 .form-footer {
   transform: scale(1);
+}
+.footer-file {
+  font-size: clamp(0.5rem, 1.5vw, 0.65rem);
+  padding: 3px;
 }
 .btn-form-footer {
   width: 5rem;
