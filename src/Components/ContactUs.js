@@ -50,14 +50,14 @@ function ContactUs() {
             name="message"
           ></textarea>
         </div>
-        <div>
+        {/* <div>
           <input
             type="file"
             className="formItems-file"
             placeholder="Upload File"
             name="myfile"
           />
-        </div>
+        </div> */}
 
         <div>
           <input

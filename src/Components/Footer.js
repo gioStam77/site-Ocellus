@@ -83,14 +83,14 @@ function Footer() {
                     name="message"
                   ></textarea>
                 </div>
-                <div>
+                {/* <div>
                   <input
                     type="file"
                     placeholder="Upload File"
                     name="myfile"
                     className="footer-file"
                   />
-                </div>
+                </div> */}
                 <div>
                   <input
                     type="submit"
