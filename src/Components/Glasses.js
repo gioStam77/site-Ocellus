@@ -21,7 +21,8 @@ function Glasses() {
           className="glassesItem"
           style={{
             backgroundImage: `url(${takis2})`,
-            backgroundPositionY: "10%",
+            backgroundSize: "130%",
+            backgroundPositionY: "5%",
           }}
         >
           <h3 className="text-blue">προσφορες</h3>
