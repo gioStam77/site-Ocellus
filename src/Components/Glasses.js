@@ -21,7 +21,7 @@ function Glasses() {
           className="glassesItem"
           style={{
             backgroundImage: `url(${takis2})`,
-            backgroundSize: "130%",
+            backgroundSize: "150%",
             backgroundPositionY: "5%",
           }}
         >
