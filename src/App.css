@@ -128,6 +128,7 @@ button:hover {
   font-size: 1.1rem;
   justify-content: space-between;
   align-items: center;
+  color: var(--mainWhite);
 }
 .nav-item:hover {
   color: var(--lightBlue);
@@ -157,6 +158,7 @@ button:hover {
 }
 .dropDown {
   background-color: var(--mainBlue);
+
   z-index: 1;
   width: 160px;
   position: fixed;
@@ -437,6 +439,102 @@ button:hover {
 }
 .formItems-footer {
   color: var(--mainBlue);
+}
+.slide-container {
+  position: relative;
+  margin: 0.5rem auto;
+  width: 95vw;
+  height: 300px;
+  /* background-color: black; */
+}
+.slide {
+  height: 100%;
+  width: 100%;
+  color: #232528;
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel {
+  position: relative;
+  margin: 0.5rem auto;
+  width: 95vw;
+  height: 35vh;
+  background-color: black;
+}
+.carouselInner {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+}
+.carouselInner .left {
+  flex: 5%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.carouselInner .center {
+  flex: 90%;
+  height: 100%;
+}
+.carouselInner .right {
+  flex: 5%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.slider {
+  position: relative;
+  margin: 0.5rem auto;
+  display: flex;
+  width: 95vw;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  height: 350px;
+  width: 100vw;
+}
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  font-size: 2.5rem;
+  background-color: black;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  font-size: 2.5rem;
+  background-color: black;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+  transform: scale(0.9);
+}
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1);
 }
 @media screen and (max-width: 960px) {
   * {
