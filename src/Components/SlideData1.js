@@ -8,6 +8,9 @@ import OCELLUS7 from "../IMAGES/OCELLUS7.jpg";
 import OCELLUS8 from "../IMAGES/OCELLUS8.jpg";
 import OCELLUS9 from "../IMAGES/OCELLUS9.jpg";
 import OCELLUS10 from "../IMAGES/OCELLUS10.jpg";
+import OCELLUS11 from "../IMAGES/OCELLUS11.jpg";
+import OCELLUS12 from "../IMAGES/OCELLUS12.jpg";
+import OCELLUS13 from "../IMAGES/OCELLUS13.jpg";
 
 export const SlideData1 = [
   {
@@ -39,5 +42,14 @@ export const SlideData1 = [
   },
   {
     img: OCELLUS10,
+  },
+  {
+    img: OCELLUS11,
+  },
+  {
+    img: OCELLUS12,
+  },
+  {
+    img: OCELLUS13,
   },
 ];

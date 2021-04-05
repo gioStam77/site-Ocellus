@@ -63,7 +63,7 @@ function Navbar() {
           </Link>
         </li>
         <li className="nav-item-links">
-          <Link to="/product" onClick={extendElementsP}>
+          <Link onClick={extendElementsP}>
             {dropdownP && (
               <DropDownP
                 onClick={handleClick}
@@ -75,7 +75,7 @@ function Navbar() {
           <FaRegCaretSquareDown className="icon-down" />
         </li>
         <li className="nav-item-links">
-          <Link to="/servises" onClick={extendElementsS}>
+          <Link onClick={extendElementsS}>
             {dropdownS && (
               <DropDownS
                 onClick={handleClick}
