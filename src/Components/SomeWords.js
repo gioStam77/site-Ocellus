@@ -4,7 +4,12 @@ function SomeWords() {
   return (
     <div className="SomeWords-container">
       <div className="SomeWords-card">
-        <img src="./images/ocellusLogo.jpg" alt="logoOcellus" height="60" />
+        <img
+          src="./images/ocellusLogoRem.png"
+          alt="logoOcellus"
+          height="60"
+          style={{ marginLeft: "30px" }}
+        />
         <h3 className="text-blue">Λιγα λογια...</h3>
         <p>
           Στο οπτικομετρικό κέντρο Ocellus που έχει την έδρα του στον Τριοβάσαλο
