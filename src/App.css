@@ -207,44 +207,64 @@ button:hover {
   padding: 15px;
 }
 .useOfContactLens img {
-  width: 50vw;
-  display: block;
+  width: 60%;
 }
 .useOfContactLens p {
-  margin: 10px;
+  margin: 4em 2em;
   padding: 5px;
   color: var(--mainBlue);
   text-align: match-parent;
 }
+.useOfContactLens p img {
+  width: 15rem;
+  float: right;
+}
 .SomeWords-container {
+  padding: 0 2em;
   margin: 3vh;
   background-color: var(--mainWhite);
   box-sizing: border-box;
   border-radius: 10px;
+
   box-shadow: 12px 12px 10px rgba(109, 14, 14, 0.8);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .SomeWords-card {
-  display: grid;
-  grid-template-columns: 1fr 3fr 11fr;
+  margin: 2em auto;
+  padding: 1em;
 }
+
 .SomeWords-container p {
-  margin: 10px;
-  padding: 5px;
   color: var(--mainBlue);
-  text-align: match-parent;
+  text-align: justify;
+  line-height: 1.75em;
 }
 .SomeWords-container h3 {
   color: var(--mainBlue);
-  text-transform: uppercase;
-  text-align: center;
-  font-size: clamp(1rem, 1.8vw, 1.5rem);
+  line-height: 2;
+  font-size: clamp(1.5rem, 1.8vw, 3.5rem);
+  border-bottom: 1px solid rgb(223, 115, 14);
 }
-.SomeWords-card img {
-  place-self: center;
-  transform: rotate(270deg);
-  margin-left: 100%;
+
+.SomeWords-card1 img {
+  width: 180px;
+  height: auto;
+
+  float: left;
+  padding: 10px 10px 0 0;
+}
+.SomeWords-card2 img {
+  width: 200px;
+  height: 150px;
+
+  float: right;
+  padding: 15px 0px 0px 10px;
+}
+.SomeWords-card3 img {
+  width: auto;
+  height: 150px;
+
+  float: left;
+  padding: 10px 10px 0 5px;
 }
 
 .glassesContainer {
@@ -473,15 +493,11 @@ button:hover {
   margin: 0.5rem auto;
   width: 95vw;
   height: 300px;
-  /* background-color: black; */
 }
 .slide {
   height: 100%;
   width: 100%;
   color: #232528;
-  /* background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -490,7 +506,7 @@ button:hover {
   position: relative;
   margin: 0.5rem auto;
   width: 95vw;
-  height: 35vh;
+  height: 300px;
   background-color: black;
 }
 .carouselInner {
@@ -563,6 +579,14 @@ button:hover {
   opacity: 1;
   transition-duration: 1s;
   transform: scale(1);
+}
+.logo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.logo-container img {
+  align-self: center;
 }
 @media screen and (max-width: 960px) {
   * {
