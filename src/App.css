@@ -105,7 +105,7 @@ button:hover {
   font-size: 1.5rem;
 }
 .tel-icon {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .bag-icon {
   font-size: 1.5rem;
@@ -115,7 +115,7 @@ button:hover {
 .navbar-nav {
   display: flex;
   justify-content: space-between;
-  width: 39%;
+  width: 40%;
 }
 
 .navbar-nav1 {
@@ -207,17 +207,21 @@ button:hover {
   padding: 15px;
 }
 .useOfContactLens img {
-  width: 60%;
+  width: 60vw;
+  max-width: 600px;
 }
 .useOfContactLens p {
-  margin: 4em 2em;
+  margin: 2em;
   padding: 5px;
   color: var(--mainBlue);
   text-align: match-parent;
 }
 .useOfContactLens p img {
-  width: 15rem;
+  width: 30vw;
+  max-width: 250px;
+  min-width: 180px;
   float: right;
+  shape-outside: circle(40%);
 }
 .SomeWords-container {
   padding: 0 2em;
@@ -246,9 +250,11 @@ button:hover {
 }
 
 .SomeWords-card1 img {
-  width: 180px;
+  width: 150px;
   height: auto;
-
+  shape-outside: ellipse(50% 30%);
+  /* shape-margin: 0.5rem; */
+  margin-right: 1rem;
   float: left;
   padding: 10px 10px 0 0;
 }
@@ -583,7 +589,7 @@ button:hover {
 .logo-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 .logo-container img {
   align-self: center;
@@ -697,9 +703,17 @@ button:hover {
     transform: scale(1.1);
     margin-top: 1rem;
   }
+  .nav-logo {
+    transform: scale(0.8);
+    margin-left: -0.5rem;
+    margin-right: -1.8rem;
+  }
 
+  .tel-icon {
+    font-size: 1rem;
+  }
   .nav-item {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .tel-icon {
@@ -711,6 +725,7 @@ button:hover {
     font-size: 1.5rem;
     margin-left: 3rem;
   }
+
   .form-footer {
     transform: scale(0.9);
   }
@@ -718,23 +733,31 @@ button:hover {
     transform: scale(0.9);
   }
 }
+
 @media screen and (max-width: 450px) and (orientation: portrait) {
   * {
     overflow-x: hidden;
   }
-
-  .nav-item {
-    font-size: 0.6rem;
+  .nav-logo {
+    transform: scale(0.8);
+    margin-left: -0.5rem;
+    margin-right: -1.8rem;
   }
-  .tel-icon {
-    font-size: 1rem;
-    margin-left: 1rem;
+  .nav-item {
+    font-size: 0.79rem;
+    margin-right: -2rem;
   }
   .mail-icon {
     margin-top: 4px;
     font-size: 1.5rem;
+    margin-left: 3.5rem;
+  }
+
+  .tel-icon {
+    font-size: 1rem;
     margin-left: 1rem;
   }
+
   .form-footer {
     transform: scale(0.8);
   }
@@ -748,6 +771,12 @@ button:hover {
     transform: scale(0.7);
     margin-left: -13%;
   }
+  .nav-logo {
+    transform: scale(0.8);
+    margin-left: -0.5rem;
+    margin-right: -1.8rem;
+  }
+
   .dailies-container {
     transform: scale(1.15);
     margin: 3rem auto;
@@ -755,5 +784,25 @@ button:hover {
     grid-template-rows: 45px 60px;
     grid-gap: 2px;
     padding: 5px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .nav-logo {
+    transform: scale(0.8);
+    margin-left: -0.5rem;
+    margin-right: -1.8rem;
+  }
+  .nav-item {
+    font-size: 0.79rem;
+    margin-right: -2rem;
+  }
+  .mail-icon {
+    margin-top: 4px;
+    font-size: 1.5rem;
+    margin-left: 3.5rem;
+  }
+  .tel-icon {
+    font-size: 1rem;
+    margin-left: 0.2rem;
   }
 }

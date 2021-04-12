@@ -41,7 +41,7 @@ function Navbar() {
         <img
           src="./images/πινακιδα.jpg"
           alt=""
-          width="140"
+          width="120"
           style={{ borderRadius: 10 }}
         />
       </Link>
