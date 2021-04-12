@@ -2,55 +2,63 @@ import React from "react";
 
 function ContactUs() {
   return (
-    <div className="containerForm">
-      <form
-        className="form"
-        name="contact"
-        action="POST"
-        method="post"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-      >
-        <input type="hidden" name="form-name" value="contact" />
-        <div hidden>
-          <input name="bot-field" />
+    <>
+      <div className="OpeningHours-container">
+        <div className="OpeningHours-card">
+          <h3>Ωράριο Λειτουργίας</h3>
+          <p>Δευτέρα-Τετάρτη-Σάββατο: 09:00 - 14:00</p>
+          <p>Τρίτη-Πέμπτη-Παρασκευή: 09:00 -13:30 και 17:30-20:30</p>
         </div>
+      </div>
+      <div className="containerForm">
+        <form
+          className="form"
+          name="contact"
+          action="POST"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <div hidden>
+            <input name="bot-field" />
+          </div>
 
-        <div>
-          <input
-            type="text"
-            className="formItems"
-            placeholder="Ονομα"
-            name="name"
-          />
-        </div>
-        <div>
-          <input
-            type="email"
-            className="formItems"
-            placeholder="Email "
-            name="email"
-          />
-        </div>
-        <div>
-          <input
-            type="text"
-            className="formItems"
-            placeholder="Τίτλος"
-            name="subject"
-          />
-        </div>
-        <div>
-          <textarea
-            className="formItems"
-            id=""
-            cols="26"
-            rows="9"
-            placeholder="Το μήνυμά σας"
-            name="message"
-          ></textarea>
-        </div>
-        {/* <div>
+          <div>
+            <input
+              type="text"
+              className="formItems"
+              placeholder="Ονομα"
+              name="name"
+            />
+          </div>
+          <div>
+            <input
+              type="email"
+              className="formItems"
+              placeholder="Email "
+              name="email"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              className="formItems"
+              placeholder="Τίτλος"
+              name="subject"
+            />
+          </div>
+          <div>
+            <textarea
+              className="formItems"
+              id=""
+              cols="26"
+              rows="9"
+              placeholder="Το μήνυμά σας"
+              name="message"
+            ></textarea>
+          </div>
+          {/* <div>
           <input
             type="file"
             className="formItems-file"
@@ -59,15 +67,16 @@ function ContactUs() {
           />
         </div> */}
 
-        <div>
-          <input
-            type="submit"
-            value="Αποστολή Μηνύματος"
-            className="btn-form"
-          />
-        </div>
-      </form>
-    </div>
+          <div>
+            <input
+              type="submit"
+              value="Αποστολή Μηνύματος"
+              className="btn-form"
+            />
+          </div>
+        </form>
+      </div>
+    </>
   );
 }
 

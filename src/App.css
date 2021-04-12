@@ -309,7 +309,7 @@ button:hover {
 }
 .form {
   position: relative;
-  margin: 5rem auto;
+  margin: 1vh 2vh;
   background-image: url(./IMAGES/takis2.jpg);
   background-position: center;
   background-size: cover;
@@ -340,6 +340,27 @@ button:hover {
   box-sizing: border-box;
   border-radius: 10px;
   box-shadow: 12px 12px 10px rgba(109, 14, 14, 0.8);
+}
+.OpeningHours-container {
+  margin: 3vh 2vh;
+  background-color: var(--mainWhite);
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 12px 12px 10px rgba(109, 14, 14, 0.8);
+  max-width: 450px;
+}
+.OpeningHours-card {
+  margin: 0.5em auto;
+  padding: 1em;
+}
+.OpeningHours-card h3 {
+  color: var(--mainBlue);
+  font-size: clamp(1.3rem, 1.8vw, 2rem);
+  border-bottom: 1px solid rgb(223, 115, 14);
+}
+.OpeningHours-card p {
+  color: var(--mainBlue);
+  text-align: justify;
 }
 
 .dailies-container {
@@ -730,7 +751,8 @@ button:hover {
     transform: scale(0.9);
   }
   .form {
-    transform: scale(0.9);
+    transform: scale(0.92);
+    margin-left: -10%;
   }
 }
 
@@ -762,14 +784,14 @@ button:hover {
     transform: scale(0.8);
   }
   .form {
-    transform: scale(0.75);
-    margin-left: -10%;
+    transform: scale(0.8);
+    margin-left: -13%;
   }
 }
 @media screen and (max-width: 360px) and (orientation: portrait) {
   .form {
     transform: scale(0.7);
-    margin-left: -13%;
+    margin-left: -15%;
   }
   .nav-logo {
     transform: scale(0.8);
