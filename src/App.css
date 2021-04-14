@@ -391,6 +391,14 @@ button:hover {
   font-size: clamp(1.3rem, 1.8vw, 2rem);
   border-bottom: 1px solid rgb(223, 115, 14);
 }
+.dailies-page {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.dailies-page > * {
+  flex: 0 1 500px;
+}
 
 .dailies-container {
   background-image: url(./IMAGES/cLens1.jpg);
@@ -399,13 +407,12 @@ button:hover {
   border-radius: 10px;
   box-shadow: 12px 12px 10px rgba(109, 14, 14, 0.8);
   display: grid;
-  margin: 3rem auto;
+  margin: 2.5rem auto;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 30px 60px;
-  grid-gap: 5px;
+  grid-gap: 8px;
   padding: 2vw;
   transform: scale(1);
-  top: 1.5rem;
 }
 
 .a1 {
@@ -442,6 +449,10 @@ button:hover {
   border-color: var(--lightBlue);
   border-radius: 10px;
 }
+.a2 :hover {
+  transform: scale(1.15);
+}
+
 .a2 img {
   width: 100%;
   height: auto;
@@ -460,11 +471,12 @@ button:hover {
   background-color: violet;
   border-color: var(--lightBlue);
   border-radius: 10px;
+  padding: 2px;
 }
 
 .a3 h6 {
   color: var(--lightBlue);
-  font-size: clamp(0.42rem, 1.2vw, 1rem);
+  font-size: clamp(0.42rem, 1.2vw, 0.85rem);
 }
 .a4 {
   background-color: var(--mainWhite);
@@ -755,7 +767,6 @@ button:hover {
   }
   .dailies-container {
     transform: scale(1.1);
-    margin-top: 1rem;
   }
   .nav-logo {
     transform: scale(0.9);

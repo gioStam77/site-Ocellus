@@ -2,7 +2,7 @@ import React from "react";
 
 function Dailies() {
   return (
-    <>
+    <div className="dailies-page">
       <div className="dailies-container">
         <div className="a1">
           <h3 className="text-blue">MyDay</h3>
@@ -128,7 +128,7 @@ function Dailies() {
           <img src="./images/CooperVision.jpg" alt="cooper vision image" />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
