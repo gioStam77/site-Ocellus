@@ -4,7 +4,7 @@ import UnderConstraction from "./UnderConstraction";
 function Sole() {
   return (
     <div>
-      return <UnderConstraction title="προσεχώς γυαλιά ηλίου" />;
+      return <UnderConstraction title="προσεχως γυαλια ηλιου" />;
     </div>
   );
 }

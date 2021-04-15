@@ -4,7 +4,7 @@ import UnderConstraction from "./UnderConstraction";
 function Vista() {
   return (
     <>
-      <UnderConstraction title="προσεχώς γυαλιά οράσεως" />
+      <UnderConstraction title="προσεχως γυαλια ορασεως" />
     </>
   );
 }

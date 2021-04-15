@@ -52,12 +52,13 @@ button:hover {
   letter-spacing: O.3rem;
   text-transform: uppercase;
   color: var(--mainBlue);
-  font-size: clamp(1.1rem, 2.5vw, 2.5rem);
+  font-size: clamp(1rem, 2.5vw, 2.5rem);
   text-align: center;
 }
 .text-bright {
   color: var(--lightBlue);
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-size: clamp(1rem, 2.5vw, 2.5rem);
+  text-transform: uppercase;
 }
 .underConstraction-image {
   height: 200px;
@@ -272,12 +273,17 @@ button:hover {
   float: left;
   padding: 10px 10px 0 5px;
 }
-
+.glasses-page {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
 .glassesContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  gap: 0.5rem;
   margin: 5px;
 }
 
@@ -390,6 +396,39 @@ button:hover {
   color: var(--mainBlue);
   font-size: clamp(1.3rem, 1.8vw, 2rem);
   border-bottom: 1px solid rgb(223, 115, 14);
+}
+.solutions-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  margin: 1rem;
+}
+
+.solutions-card {
+  margin: 1rem auto;
+  background-color: var(--mainWhite);
+  flex: 0 1 525px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 12px 12px 10px rgba(109, 14, 14, 0.8);
+}
+.solutions-card h1 {
+  color: var(--mainBlue);
+  font-size: 3rem;
+  border-bottom: 1px solid rgb(223, 115, 14);
+}
+.solutions-card h4 {
+  color: green;
+}
+.solutions-card p {
+  color: var(--mainBlue);
+  text-align: justify;
+  padding: 1rem;
+}
+.solutions-card img {
+  max-width: 80%;
 }
 .dailies-page {
   display: flex;
