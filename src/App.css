@@ -17,7 +17,6 @@
 
 body,
 html {
-  /* height: 100%; */
   font-family: "Oswald", sans-serif;
   background-image: url(../src/IMAGES/TAPETSARIA.jpg);
   background-repeat: repeat;
@@ -232,7 +231,6 @@ button:hover {
   background-color: var(--mainWhite);
   box-sizing: border-box;
   border-radius: 10px;
-
   box-shadow: 12px 12px 10px rgba(109, 14, 14, 0.8);
 }
 .SomeWords-card {
@@ -256,7 +254,6 @@ button:hover {
   width: 150px;
   height: auto;
   shape-outside: ellipse(50% 30%);
-  /* shape-margin: 0.5rem; */
   margin-right: 1rem;
   float: left;
   padding: 10px 10px 0 0;
@@ -563,7 +560,7 @@ button:hover {
 .foo-container p {
   display: grid;
   place-items: center;
-  font-size: clamp(0.6rem, 1.5vw, 1rem);
+  font-size: clamp(0.7rem, 1.5vw, 1rem);
 }
 .foo-row {
   display: flex;
@@ -598,34 +595,21 @@ button:hover {
 .formItems-footer {
   color: var(--mainBlue);
 }
-.slide-container {
-  position: relative;
-  margin: 0.5rem auto;
-  width: 95vw;
-  height: 300px;
-}
-.slide {
-  height: 100%;
-  width: 100%;
-  color: #232528;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .carousel {
   position: relative;
   margin: 0.5rem auto;
   width: 95vw;
-  height: 300px;
-  background-color: black;
+  height: 330px;
+  background-color: transparent;
 }
 .carouselInner {
-  height: 100%;
+  height: 91%;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+  transition: ease 500ms;
   display: flex;
 }
 .carouselInner .left {
@@ -648,14 +632,23 @@ button:hover {
   place-items: center;
   cursor: pointer;
 }
-.slider {
-  position: relative;
-  margin: 0.5rem auto;
-  display: flex;
-  width: 95vw;
-  justify-content: center;
-  align-items: center;
+.carousel-dots {
+  text-align: center;
 }
+.carousel-dot {
+  position: relative;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 7px 0px;
+  background-color: var(--mainBlue);
+}
+.carousel-dot:hover {
+  background-color: var(--lightBlue);
+}
+
 .image {
   height: 350px;
   width: 100vw;
@@ -680,16 +673,7 @@ button:hover {
   cursor: pointer;
   user-select: none;
 }
-.slide {
-  opacity: 0;
-  transition-duration: 1s ease;
-  transform: scale(0.9);
-}
-.slide.active {
-  opacity: 1;
-  transition-duration: 1s;
-  transform: scale(1);
-}
+
 .logo-container {
   display: flex;
   flex-wrap: wrap;
@@ -698,6 +682,7 @@ button:hover {
 .logo-container img {
   align-self: center;
 }
+
 @media screen and (max-width: 960px) {
   * {
     overflow-x: hidden;

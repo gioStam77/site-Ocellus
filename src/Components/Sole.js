@@ -3,9 +3,12 @@ import UnderConstraction from "./UnderConstraction";
 
 function Sole() {
   return (
-    <div>
-      return <UnderConstraction title="προσεχως γυαλια ηλιου" />;
-    </div>
+    <>
+      {" "}
+      <div>
+        return <UnderConstraction title="προσεχως γυαλια ηλιου" />;
+      </div>
+    </>
   );
 }
 

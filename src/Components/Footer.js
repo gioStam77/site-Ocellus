@@ -18,7 +18,7 @@ function Footer() {
               <li>διεύθυνση: Π.Τριοβάσαλος</li>
               <li>Μήλος , Κυκλάδες</li>
               <li>Τ.Κ 84800</li>
-              <li>
+              <li style={{ fontSize: "clamp(0.8rem, 1.5vw, 1rem)" }}>
                 <VscMail />
                 <Link to="/contactUs">ocellus.gr@gmail.com</Link>
               </li>
@@ -43,7 +43,7 @@ function Footer() {
               <Link to="/solutions">
                 <li>υγρά αξεσουάρ</li>
               </Link>
-              <Link to="/">
+              <Link to="/general">
                 <li>προσφορές</li>
               </Link>
             </ul>
@@ -83,14 +83,7 @@ function Footer() {
                     name="message"
                   ></textarea>
                 </div>
-                {/* <div>
-                  <input
-                    type="file"
-                    placeholder="Upload File"
-                    name="myfile"
-                    className="footer-file"
-                  />
-                </div> */}
+
                 <div>
                   <input
                     type="submit"
