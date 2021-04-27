@@ -22,18 +22,18 @@ export const SlideData1 = [
   {
     img: OCELLUS3,
   },
-  {
-    img: OCELLUS4,
-  },
-  {
-    img: OCELLUS5,
-  },
-  {
-    img: OCELLUS6,
-  },
-  {
-    img: OCELLUS7,
-  },
+  // {
+  //   img: OCELLUS4,
+  // },
+  // {
+  //   img: OCELLUS5,
+  // },
+  // {
+  //   img: OCELLUS6,
+  // },
+  // {
+  //   img: OCELLUS7,
+  // },
   {
     img: OCELLUS8,
   },
@@ -43,13 +43,13 @@ export const SlideData1 = [
   {
     img: OCELLUS10,
   },
-  {
-    img: OCELLUS11,
-  },
+  // {
+  //   img: OCELLUS11,
+  // },
   {
     img: OCELLUS12,
   },
-  {
-    img: OCELLUS13,
-  },
+  // {
+  //   img: OCELLUS13,
+  // },
 ];

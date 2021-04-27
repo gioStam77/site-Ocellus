@@ -3,9 +3,9 @@ import React, { useEffect, useRef, useState } from "react";
 import { SlideData1 } from "./SlideData1";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 
-function ImageSlider({ slides }) {
+function ImageSlider() {
   const [current, setCurrent] = useState(0);
-  const length = slides.length;
+  const length = SlideData1.length;
   const timeoutRef = useRef(null);
 
   function resetTimeout() {
@@ -30,7 +30,7 @@ function ImageSlider({ slides }) {
     <div className="carousel">
       <div
         className="carouselInner"
-        style={{ backgroundImage: `url(${slides[current].img})` }}
+        style={{ backgroundImage: `url(${SlideData1[current].img})` }}
       >
         <div className="left">
           <FaArrowAltCircleLeft onClick={prevSlide} />
