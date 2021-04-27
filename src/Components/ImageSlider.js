@@ -26,15 +26,11 @@ function ImageSlider({ slides }) {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
 
-  if (!Array.isArray(slides) || slides.length <= 0) {
-    return null;
-  }
-
   return (
     <div className="carousel">
       <div
         className="carouselInner"
-        style={{ backgroundImage: `url(${SlideData1[current].img})` }}
+        style={{ backgroundImage: `url(${slides[current].img})` }}
       >
         <div className="left">
           <FaArrowAltCircleLeft onClick={prevSlide} />

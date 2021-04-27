@@ -1,16 +1,16 @@
-import OCELLUS1 from "../IMAGES/OCELLUS1.jpg";
-import OCELLUS2 from "../IMAGES/OCELLUS2.jpg";
-import OCELLUS3 from "../IMAGES/OCELLUS3.jpg";
-import OCELLUS4 from "../IMAGES/OCELLUS4.jpg";
-import OCELLUS5 from "../IMAGES/OCELLUS5.jpg";
-import OCELLUS6 from "../IMAGES/OCELLUS6.jpg";
-import OCELLUS7 from "../IMAGES/OCELLUS7.jpg";
-import OCELLUS8 from "../IMAGES/OCELLUS8.jpg";
-import OCELLUS9 from "../IMAGES/OCELLUS9.jpg";
-import OCELLUS10 from "../IMAGES/OCELLUS10.jpg";
-import OCELLUS11 from "../IMAGES/OCELLUS11.jpg";
-import OCELLUS12 from "../IMAGES/OCELLUS12.jpg";
-import OCELLUS13 from "../IMAGES/OCELLUS13.jpg";
+import OCELLUS1 from "../IMAGES/OCELLUS1-min.jpg";
+import OCELLUS2 from "../IMAGES/OCELLUS2-min.jpg";
+import OCELLUS3 from "../IMAGES/OCELLUS3-min.jpg";
+import OCELLUS4 from "../IMAGES/OCELLUS4-min.jpg";
+import OCELLUS5 from "../IMAGES/OCELLUS5-min.jpg";
+import OCELLUS6 from "../IMAGES/OCELLUS6-min.jpg";
+import OCELLUS7 from "../IMAGES/OCELLUS7-min.jpg";
+import OCELLUS8 from "../IMAGES/OCELLUS8-min.jpg";
+import OCELLUS9 from "../IMAGES/OCELLUS9-min.jpg";
+import OCELLUS10 from "../IMAGES/OCELLUS10-min.jpg";
+import OCELLUS11 from "../IMAGES/OCELLUS11-min.jpg";
+import OCELLUS12 from "../IMAGES/OCELLUS12-min.jpg";
+import OCELLUS13 from "../IMAGES/OCELLUS13-min.jpg";
 
 export const SlideData1 = [
   {
