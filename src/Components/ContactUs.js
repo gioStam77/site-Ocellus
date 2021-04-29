@@ -1,4 +1,5 @@
 import React from "react";
+import Map from "./Map";
 
 function ContactUs() {
   return (
@@ -16,17 +17,17 @@ function ContactUs() {
         <img
           src="./images/gfFerre.png"
           height="50"
-          style={{ margin: "2vw 3vw" }}
+          style={{ margin: "2vw 1vw" }}
         />{" "}
-        <img
+        {/* <img
           src="./images/hofman.png"
           height="120"
           style={{ margin: "2vw 1vw" }}
-        />
+        /> */}
         <img
           src="./images/invu.png"
           height="40"
-          style={{ margin: "2vw 1vw" }}
+          style={{ margin: "6vw 1vw" }}
         />
         <img
           src="./images/paulFrank 1.jpg"
@@ -36,15 +37,10 @@ function ContactUs() {
         <img
           src="./images/reebok.png"
           height="50"
-          style={{ margin: "2vw 2vw" }}
+          style={{ margin: "2vw 1vw" }}
         />
       </div>
-      <div className="OpeningHours-container1">
-        <div className="OpeningHours-card1">
-          <h3>Φόρμα Επικοινωνίας</h3>
-        </div>
-      </div>
-      <div className="containerForm">
+      <div className="map-form-container">
         <form
           className="form"
           name="contact"
@@ -53,6 +49,7 @@ function ContactUs() {
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
+          <h3>Φόρμα Επικοινωνίας</h3>
           <input type="hidden" name="form-name" value="contact" />
           <div hidden>
             <input name="bot-field" />
@@ -101,6 +98,8 @@ function ContactUs() {
             />
           </div>
         </form>
+
+        <Map />
       </div>
       <div className="logo-container">
         {" "}

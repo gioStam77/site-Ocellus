@@ -308,14 +308,17 @@ button:hover {
   margin-top: 20%;
   font-size: 2rem;
 }
-.containerForm {
-  display: grid;
-  place-items: center;
-  margin-bottom: 2rem;
+.map-form-container h3 {
+  color: var(--mainWhite);
+  position: absolute;
+  transform: rotate(70deg);
+  left: 10px;
+  margin-top: 180px;
+  border-bottom: 2px solid orangered;
 }
 .form {
-  margin: 1vh 2vh;
-  background-image: url(./IMAGES/takis2.jpg);
+  transform: scale(1);
+  background-image: url(./IMAGES/takis2.1.jpg);
   background-position: center;
   background-size: cover;
   box-sizing: border-box;
@@ -323,7 +326,6 @@ button:hover {
   width: 450px;
   border-radius: 10px;
   box-shadow: 12px 12px 10px rgba(109, 14, 14, 0.8);
-  transform: scale(1);
 }
 .formItems {
   margin-left: 45%;
@@ -331,31 +333,13 @@ button:hover {
   color: var(--mainBlue);
   font-size: 1.2rem;
 }
-.formItems-file {
-  margin-left: 40%;
-  color: var(--mainBlue);
-  box-sizing: border-box;
-  border-radius: 10px;
-}
-
 .btn-form {
-  width: 13rem;
-  margin: 2rem 2rem;
+  width: 10rem;
+  margin: 2rem 0.5rem;
   color: var(--mainBlue);
   box-sizing: border-box;
   border-radius: 10px;
   box-shadow: 12px 12px 10px rgba(109, 14, 14, 0.8);
-}
-.contactUs {
-  display: grid;
-  place-items: center;
-}
-.contactUs-logos {
-  width: 180px;
-  position: absolute;
-  top: 5vh;
-  right: 0;
-  margin: 5vh 1vh;
 }
 .OpeningHours-container {
   margin: 3vh 2vh;
@@ -379,22 +363,25 @@ button:hover {
   color: var(--mainBlue);
   text-align: justify;
 }
-.OpeningHours-container1 {
-  margin: 2vh 0vh 0vh;
-  background-color: var(--mainWhite);
+.map-form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+.map {
+  transform: scale(1);
   box-sizing: border-box;
+  width: 450px;
   border-radius: 10px;
   box-shadow: 12px 12px 10px rgba(109, 14, 14, 0.8);
-  max-width: 450px;
 }
-.OpeningHours-card1 {
-  margin: 0.5em auto;
-  padding: 1em;
-}
-.OpeningHours-card1 h3 {
-  color: var(--mainBlue);
-  font-size: clamp(1.3rem, 1.8vw, 2rem);
-  border-bottom: 1px solid rgb(223, 115, 14);
+.contactUs-logos {
+  position: absolute;
+  top: 1vh;
+  right: 0;
+  display: flex;
+  align-items: center;
 }
 .solutions-container {
   display: flex;
@@ -682,6 +669,18 @@ button:hover {
 .logo-container img {
   align-self: center;
 }
+.marker-btn {
+  display: flex;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.marker-pop {
+  position: absolute;
+  top: 1%;
+  left: 10%;
+}
 
 @media screen and (max-width: 960px) {
   * {
@@ -820,9 +819,6 @@ button:hover {
   .form-footer {
     transform: scale(0.9);
   }
-  .form {
-    transform: scale(0.92);
-  }
 }
 
 @media screen and (max-width: 450px) and (orientation: portrait) {
@@ -849,12 +845,20 @@ button:hover {
     transform: scale(0.8);
   }
   .form {
-    transform: scale(0.8);
+    transform: scale(0.95);
+  }
+  .map {
+    transform: scale(0.95);
+  }
+  .map-form-container h3 {
+    left: -2%;
+    margin-top: 180px;
   }
 }
 @media screen and (max-width: 360px) and (orientation: portrait) {
-  .form {
-    transform: scale(0.7);
+  .map-form-container h3 {
+    left: -12%;
+    margin-top: 185px;
   }
 
   .dailies-container {
