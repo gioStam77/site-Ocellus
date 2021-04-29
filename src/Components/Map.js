@@ -19,9 +19,7 @@ function Map() {
     <div className="map">
       <ReactMapGL
         {...viewport}
-        mapboxApiAccessToken={
-          "pk.eyJ1IjoiZ3N0YW03NyIsImEiOiJja28wYmYzNHYwOW4yMm9udzRrZWV1d2piIn0.aWnHCRrw0dwqpOiCIMV7LA"
-        }
+        mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN }
         mapStyle="mapbox://styles/gstam77/cko1547mt0jbf18lezb7g1d0b"
         onViewportChange={handleViewport}
       >
