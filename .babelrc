@@ -1,0 +1,8 @@
+{
+    "presets": [
+        "react-app"
+    ],"ignore": [
+    
+    "**/*.mapbox.js" 
+]
+}
