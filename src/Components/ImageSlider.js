@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 import { SlideData1 } from "./SlideData1";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
+import { scryRenderedDOMComponentsWithClass } from "react-dom/test-utils";
 
 function ImageSlider() {
   const [current, setCurrent] = useState(0);
@@ -17,7 +18,9 @@ function ImageSlider() {
   useEffect(() => {
     resetTimeout();
     timeoutRef.current = setTimeout(() => nextSlide(), 2500);
-    return () => {};
+    return () => {
+      resetTimeout();
+    };
   }, [current]);
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
