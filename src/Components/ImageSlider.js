@@ -9,17 +9,20 @@ function ImageSlider() {
   const length = SlideData1.length;
   const timeoutRef = useRef(null);
 
-  function resetTimeout() {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-    }
-  }
+  // function resetTimeout() {
+  //   if (timeoutRef.current) {
+  //     clearTimeout(timeoutRef.current);
+  //   }
+  // }
 
   useEffect(() => {
-    resetTimeout();
-    timeoutRef.current = setTimeout(() => nextSlide(), 2500);
+    // resetTimeout();
+    timeoutRef.current = setTimeout(
+      () => setCurrent(current === length - 1 ? 0 : current + 1),
+      2000
+    );
     return () => {
-      resetTimeout();
+      clearTimeout(timeoutRef.current);
     };
   }, [current]);
   const nextSlide = () => {
