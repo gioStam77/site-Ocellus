@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 
 import { SlideData1 } from "./SlideData1";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
-import { scryRenderedDOMComponentsWithClass } from "react-dom/test-utils";
 
 function ImageSlider() {
   const [current, setCurrent] = useState(0);
