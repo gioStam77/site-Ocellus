@@ -1,5 +1,5 @@
-import React from "react";
-import Map from "./Map";
+import React from 'react';
+import Map from './Map';
 
 function ContactUs() {
   return (
@@ -8,17 +8,17 @@ function ContactUs() {
         <div className="OpeningHours-card">
           <h3>Ωράριο Λειτουργίας</h3>
           <p>Δευτέρα-Τετάρτη-Σάββατο: 09:00 - 14:00</p>
-          <p>Τρίτη-Πέμπτη-Παρασκευή: 09:00 -13:30 και 18:00-21:00</p>
+          <p>Τρίτη-Πέμπτη-Παρασκευή: 09:00 -13:30 και 17:30-20:30</p>
           <br />
           <p>Π.Τριοβάσαλος | ΤΚ:84800 | Μήλος | Κυκλάδες</p>
         </div>
-      </div>{" "}
+      </div>{' '}
       <div className="contactUs-logos">
         <img
           src="./images/gfFerre.png"
           height="50"
-          style={{ margin: "2vw 1vw" }}
-        />{" "}
+          style={{ margin: '2vw 1vw' }}
+        />{' '}
         {/* <img
           src="./images/hofman.png"
           height="120"
@@ -27,17 +27,17 @@ function ContactUs() {
         <img
           src="./images/invu.png"
           height="40"
-          style={{ margin: "6vw 1vw" }}
+          style={{ margin: '6vw 1vw' }}
         />
         <img
           src="./images/paulFrank 1.jpg"
           height="100"
-          style={{ margin: "2vw 1vw" }}
+          style={{ margin: '2vw 1vw' }}
         />
         <img
           src="./images/reebok.png"
           height="50"
-          style={{ margin: "2vw 1vw" }}
+          style={{ margin: '2vw 1vw' }}
         />
       </div>
       <div className="map-form-container">
@@ -102,41 +102,41 @@ function ContactUs() {
         <Map />
       </div>
       <div className="logo-container">
-        {" "}
+        {' '}
         <img
           src="./images/funkyBudda.png"
           height="70"
-          style={{ margin: "1vw" }}
+          style={{ margin: '1vw' }}
         />
         <img
           src="./images/gfFerre.png"
           height="50"
-          style={{ margin: "1vw 1vw" }}
+          style={{ margin: '1vw 1vw' }}
         />
         <img
           src="./images/elGreco.png"
           height="50"
-          style={{ margin: "1vw 1vw" }}
+          style={{ margin: '1vw 1vw' }}
         />
         <img
           src="./images/annaRiska.png"
           height="50"
-          style={{ margin: "1vw 1vw" }}
+          style={{ margin: '1vw 1vw' }}
         />
         <img
           src="./images/3guys.png"
           height="60"
-          style={{ margin: "1vw 1vw" }}
+          style={{ margin: '1vw 1vw' }}
         />
         <img
           src="./images/pepe-jeans-logo.jpg"
           height="100"
-          style={{ margin: "1vw 1vw" }}
+          style={{ margin: '1vw 1vw' }}
         />
         <img
           src="./images/superDry.png"
           height="60"
-          style={{ margin: "1vw 2vw" }}
+          style={{ margin: '1vw 2vw' }}
         />
       </div>
     </div>
